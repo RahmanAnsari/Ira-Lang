@@ -1,0 +1,40 @@
+[package]
+name = "ira-lang"
+version = "1.0.0"
+edition = "2021"
+authors = ["Rahman"]
+description = "Ira - Domain-specific language for football simulation data"
+license = "MIT"
+repository = "https://github.com/rahman/ira-lang"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+nom = "7.1"
+thiserror = "1.0"
+clap = { version = "4.0", features = ["derive"] }
+brotli = "6.0"
+zstd = "0.13"
+
+[lib]
+name = "ira_lang"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ira"
+path = "src/bin/ira.rs"
+
+[[bin]]
+name = "irac"
+path = "src/bin/irac.rs"
+
+[[bin]]
+name = "iread"
+path = "src/bin/iread.rs"
+
+[dev-dependencies]
+criterion = "0.5"
+
+# [[bench]]
+# name = "parser_bench"
+# harness = false

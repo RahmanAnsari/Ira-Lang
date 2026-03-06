@@ -1,0 +1,161 @@
+/**
+ * Countries Schema - Comprehensive Football Manager & FIFA-style Country Data
+ * Ira Language - Binary Storage Format
+ * 
+ * This schema captures ALL country properties for football simulation
+ * Excludes: League structure, National team details, League quality (separate schemas)
+ */
+
+namespace Football {
+
+    /**
+     * Complete Country schema with Football Manager & FIFA-level detail
+     * Foundation for all football simulation data
+     */
+    schema Country {
+        // === BASIC IDENTIFICATION ===
+        id: u8                                  // Unique country identifier (1-255)
+        name: string                            // Full country name
+        code: string                            // 3-letter ISO code (IND, BRA, GER, etc.)
+        shortCode: string                       // 2-letter ISO code (IN, BR, DE, etc.)
+        
+        // === GEOGRAPHIC & DEMOGRAPHIC ===
+        continent: u8                           // 0=Europe, 1=South America, 2=North America, 3=Africa, 4=Asia, 5=Oceania
+        capital: string                         // Capital city
+        population: u32                         // Population in millions
+        landArea: u32                           // Land area in km²
+        timeZone: i8                           // GMT offset
+        
+        // === ECONOMIC INDICATORS ===
+        gdpPerCapita: u32                      // GDP per capita in USD
+        currencyCode: string                   // Currency code (USD, EUR, INR, etc.)
+        currencySymbol: string                 // Currency symbol ($, €, ₹, etc.)
+        averageWageLevel: u32                  // Average annual wage in USD
+        economicStability: u8                  // 1-10 economic stability rating
+        
+        // === LANGUAGE & CULTURE ===
+        primaryLanguage: string                // Main language
+        secondaryLanguages: string[3]          // Additional languages
+        footballCulture: u8                    // 1-20 how important football is culturally
+        footballHistory: u16                   // Years since organized football began
+        
+        // === FOOTBALL DEVELOPMENT INFRASTRUCTURE ===
+        @range(1, 200) youthRating: u8         // Quality of youth players produced (FM scale)
+        @range(1, 20) coachingLevel: packed6   // Overall coaching standard
+        @range(1, 20) facilitiesRating: packed6 // Training infrastructure quality
+        @range(1, 20) footballImportance: packed6 // How much country prioritizes football
+        @range(1, 20) juniorCoaching: packed6  // Youth development systems quality
+        
+        // === COACHING & EDUCATION SYSTEMS ===
+        @range(1, 20) coachingEducation: packed6 // Coach training programs quality
+        licensedCoaches: u16                   // Number of licensed coaches
+        coachingSchools: u8                    // Number of coaching academies
+        @range(1, 20) tacticalKnowledge: packed6 // Overall tactical understanding
+        @range(1, 20) modernMethods: packed6   // Adoption of modern training methods
+        
+        // === INFRASTRUCTURE & FACILITIES ===
+        professionalClubs: u8                  // Number of professional clubs
+        stadiumsOver10k: u8                    // Stadiums with 10k+ capacity
+        stadiumsOver30k: u8                    // Stadiums with 30k+ capacity
+        trainingCenters: u16                   // Number of quality training facilities
+        @range(1, 20) medicalSupport: packed6  // Sports medicine infrastructure
+        
+        // === ECONOMIC FACTORS FOR CLUBS ===
+        averageTransferBudget: money           // Typical club transfer budget
+        averageWageBudget: money              // Typical club wage budget
+        @range(1, 20) sponsorshipLevels: packed6 // Commercial sponsorship availability
+        @range(1, 20) tvMoneyDistribution: packed6 // Broadcasting revenue levels
+        @range(1, 20) ticketPriceLevels: packed6 // Match ticket price levels
+        
+        // === TALENT PRODUCTION CHARACTERISTICS ===
+        @range(1, 20) technicalTendency: packed6 // Produces technical players
+        @range(1, 20) physicalTendency: packed6  // Produces physical players
+        @range(1, 20) mentalTendency: packed6    // Produces mentally strong players
+        @range(1, 20) paceTendency: packed6      // Produces fast players
+        @range(1, 20) creativityTendency: packed6 // Produces creative players
+        
+        // === PREFERRED POSITIONS (what country produces best) ===
+        preferredPositions: u8[5]              // Top 5 positions country excels at producing
+        weakPositions: u8[2]                   // Positions country struggles to produce
+        
+        // === PLAYING STYLE TENDENCIES ===
+        @range(1, 20) possessionStyle: packed6    // Tendency toward possession football
+        @range(1, 20) counterAttackStyle: packed6 // Tendency toward counter-attacking
+        @range(1, 20) directStyle: packed6        // Tendency toward direct play
+        @range(1, 20) technicalStyle: packed6     // Emphasis on technical skills
+        @range(1, 20) physicalStyle: packed6      // Emphasis on physicality
+        
+        // === PLAYER PERSONALITY TRAITS ===
+        commonPersonalities: u8[5]             // Most common personality types produced
+        @range(1, 20) determination: packed6   // Typical determination levels
+        @range(1, 20) workRate: packed6       // Typical work ethic
+        @range(1, 20) professionalism: packed6 // Professional attitude levels
+        @range(1, 20) ambition: packed6       // Ambition levels of players
+        
+        // === REPUTATION & STATUS ===
+        @range(1, 200) domesticReputation: u8  // Domestic football reputation (FM scale)
+        @range(1, 200) continentalReputation: u8 // Continental reputation
+        @range(1, 200) worldReputation: u8     // Global football reputation
+        continentalConfederation: u8           // 0=UEFA, 1=CONMEBOL, 2=CONCACAF, 3=CAF, 4=AFC, 5=OFC
+        
+        // === CONTINENTAL COMPETITION ACCESS ===
+        championsLeagueSlots: u8               // Champions League equivalent slots
+        europaCupSlots: u8                     // Europa/secondary cup slots
+        qualificationSlots: u8                 // Qualification round slots
+        @range(0.0, 99.0) continentalCoefficient: f32 // UEFA coefficient equivalent
+        
+        // === FOREIGN PLAYER REGULATIONS ===
+        maxForeignPlayers: u8                  // Max foreign players per club (0=unlimited)
+        maxNonEUPlayers: u8                   // Max non-EU players (if applicable)
+        homegrownRequirement: u8              // Required homegrown players
+        @range(1, 20) workPermitDifficulty: packed6 // How hard to get work permits
+        
+        // === DEVELOPMENT TRENDS ===
+        @range(1, 20) growthPotential: packed6    // How fast football is developing
+        @range(1, 20) investmentLevels: packed6   // Current investment in football
+        @range(1, 20) youthDevelopmentTrend: packed6 // Trend in youth development
+        @range(1, 20) infrastructureTrend: packed6   // Infrastructure development trend
+        
+        // === SPECIAL CHARACTERISTICS ===
+        isFootballMajor: boolean               // Major football nation
+        hasStrongDomesticLeague: boolean       // Strong domestic competition
+        isEmergingMarket: boolean              // Developing football market
+        hasFootballTradition: boolean          // Long football history
+        isWealthyNation: boolean               // High GDP nation
+        
+        // === CLIMATE & GEOGRAPHY FACTORS ===
+        @range(-50, 50) averageTemperature: i8     // Average temperature in Celsius
+        climateType: u8                        // 0=temperate, 1=tropical, 2=arid, 3=cold, 4=humid
+        seasonality: u8                        // 0=summer season, 1=winter season, 2=year-round
+        altitudeType: u8                       // 0=sea level, 1=moderate altitude, 2=high altitude
+        
+        // === BROADCASTING & MEDIA ===
+        @range(1, 20) mediaInterest: packed6      // Media coverage of domestic football
+        @range(1, 20) broadcastingQuality: packed6 // Quality of football broadcasting
+        internationalTVDeal: boolean          // Has international broadcast deals
+        @range(1, 20) digitalPresence: packed6    // Online/social media presence
+        
+        // === REGULATORY ENVIRONMENT ===
+        @range(1, 20) governmentSupport: packed6  // Government support for football
+        @range(1, 20) footballGovernance: packed6 // Quality of football governance
+        @range(1, 20) corruptionLevels: packed6   // Corruption in football (1=high, 20=clean)
+        @range(1, 20) financialRegulation: packed6 // Financial regulation strength
+        
+        // === SOCIAL FACTORS ===
+        @range(1, 20) genderEquality: packed6     // Women's football support
+        @range(1, 20) socialMobility: packed6     // Football as social mobility tool
+        @range(1, 20) educationIntegration: packed6 // Football in education system
+        @range(1, 20) communityInvolvement: packed6  // Community football programs
+        
+        // === INNOVATION & TECHNOLOGY ===
+        @range(1, 20) technologyAdoption: packed6 // Adoption of football technology
+        @range(1, 20) analyticsUsage: packed6     // Use of data analytics
+        @range(1, 20) medicalInnovation: packed6  // Sports medicine innovation
+        @range(1, 20) tacticalEvolution: packed6  // Tactical innovation levels
+        
+        // === METADATA ===
+        lastUpdated: u32                       // Unix timestamp of last update
+        dataVersion: u16                       // Data format version
+        notes: string                          // Additional notes/comments
+    }
+}
