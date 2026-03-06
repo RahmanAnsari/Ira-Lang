@@ -26,10 +26,65 @@ fn validate_override_namespace(override_ns: &OverrideNamespace, schemas: &BuiltI
 
 /// Validate data namespace
 fn validate_data_namespace(data_ns: &DataNamespace, schemas: &BuiltInSchemas) -> Result<()> {
+    // First, validate each schema individually
     for (schema_type, schema_data) in &data_ns.schema_data {
         let schema_def = schemas.get_schema(schema_type);
         validate_schema_data(schema_data, schema_def, schema_type)?;
     }
+    
+    // Then, validate document-level constraints
+    validate_document_structure(data_ns)?;
+    
+    Ok(())
+}
+
+/// Validate document-level structure constraints
+fn validate_document_structure(data_ns: &DataNamespace) -> Result<()> {
+    let has_countries = data_ns.schema_data.contains_key(&SchemaType::Countries);
+    let has_leagues = data_ns.schema_data.contains_key(&SchemaType::Leagues);
+    
+    // Rule: If leagues exist, countries must exist
+    if has_leagues && !has_countries {
+        return Err(IraError::validation_error(
+            "Document Structure",
+            "Leagues require at least one Country to be defined. Add a Countries schema.".to_string()
+        ));
+    }
+    
+    // Rule: Validate league country references
+    if has_leagues && has_countries {
+        validate_league_country_references(data_ns)?;
+    }
+    
+    Ok(())
+}
+
+/// Validate that all league countryId references point to existing countries
+fn validate_league_country_references(data_ns: &DataNamespace) -> Result<()> {
+    // Get all country IDs
+    let countries = data_ns.schema_data.get(&SchemaType::Countries).unwrap();
+    let mut country_ids = std::collections::HashSet::new();
+    
+    for instance in countries.instances.values() {
+        if let Some(IraValue::UUID(country_id)) = instance.fields.get("ID") {
+            country_ids.insert(country_id.clone());
+        }
+    }
+    
+    // Check all league country references
+    if let Some(leagues) = data_ns.schema_data.get(&SchemaType::Leagues) {
+        for (league_name, league_instance) in &leagues.instances {
+            if let Some(IraValue::UUID(country_id)) = league_instance.fields.get("countryId") {
+                if !country_ids.contains(country_id) {
+                    return Err(IraError::validation_error(
+                        &format!("League '{}'", league_name),
+                        format!("Invalid countryId reference '{}'. No country with this ID exists.", country_id)
+                    ));
+                }
+            }
+        }
+    }
+    
     Ok(())
 }
 
@@ -196,6 +251,17 @@ fn validate_field_value(value: &IraValue, expected_type: &DataType, field_name: 
             }
         },
         
+        // Handle numbers that should be years  
+        (IraValue::Number(n), DataType::Year) => {
+            let year_value = *n as u16;
+            if year_value < 1800 || year_value > 2100 {
+                return Err(IraError::validation_error(
+                    field_name,
+                    format!("Year {} is outside valid range 1800-2100", year_value)
+                ));
+            }
+        },
+        
         // Handle numbers that should be money
         (IraValue::Number(n), DataType::Money { .. }) => {
             if *n < 0.0 {
@@ -251,6 +317,49 @@ fn validate_field_value(value: &IraValue, expected_type: &DataType, field_name: 
         (IraValue::Number(n), DataType::TimeZone) => {
             if let Err(e) = crate::types::TimeZone::from_decimal(*n) {
                 return Err(IraError::validation_error(field_name, e));
+            }
+        },
+        
+        // Handle UUID values (including Country IDs, League IDs, Stadium IDs, and Team IDs)
+        (IraValue::UUID(id_str), DataType::UUID) => {
+            use crate::types::IraIdValidator;
+            
+            // Check if it's a Country ID, League ID, Stadium ID, Team ID, or regular UUID
+            let is_valid = if id_str.starts_with("COUN") {
+                IraIdValidator::is_valid_country_id(id_str)
+            } else if id_str.starts_with("LEAG") {
+                IraIdValidator::is_valid_league_id(id_str)
+            } else if id_str.starts_with("STAD") {
+                IraIdValidator::is_valid_stadium_id(id_str)
+            } else if id_str.starts_with("TEM") {
+                IraIdValidator::is_valid_team_id(id_str)
+            } else {
+                IraIdValidator::is_valid_uuid(id_str)
+            };
+            
+            if !is_valid {
+                let expected_format = if field_name == "ID" || field_name == "leagueId" || field_name == "stadiumId" || field_name == "teamId" {
+                    // For schema ID fields, determine expected format by prefix
+                    if id_str.starts_with("COUN") || field_name == "countryId" {
+                        "COUN1000-1999 (e.g., COUN1232)"
+                    } else if id_str.starts_with("LEAG") || field_name == "leagueId" {
+                        "LEAG10000-19999 (e.g., LEAG12345)"
+                    } else if id_str.starts_with("STAD") || field_name == "stadiumId" {
+                        "STAD13000-13999 (e.g., STAD13001)"
+                    } else if id_str.starts_with("TEM") || field_name == "teamId" {
+                        "TEM10000-19999 (e.g., TEM14001)"
+                    } else {
+                        "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+                    }
+                } else {
+                    // For other UUIDs, expect standard format
+                    "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+                };
+                
+                return Err(IraError::validation_error(
+                    field_name,
+                    format!("Invalid ID format: '{}'. Expected format: {}", id_str, expected_format)
+                ));
             }
         },
         

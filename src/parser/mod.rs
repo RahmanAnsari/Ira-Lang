@@ -83,10 +83,7 @@ fn analyze_parse_error_deep(original_input: &str, error_position: &str) -> IraEr
                     "Invalid NAMESPACE declaration. Expected: 'NAMESPACE DATA {'".to_string());
             }
             
-            if trimmed.contains("SCHEMA") && !trimmed.starts_with("SCHEMA COUNTRIES {") {
-                return IraError::parse_error(line_num_1, 1,
-                    "Invalid SCHEMA declaration. Expected: 'SCHEMA COUNTRIES {'".to_string());
-            }
+            // Schema validation - removed to avoid interference with parser
             
             // Check for country definition issues
             if in_data_section && !in_country && trimmed.contains(':') && trimmed.contains('{') {
@@ -450,16 +447,17 @@ fn schema_override(input: &str) -> IResult<&str, (SchemaType, SchemaOverride)> {
 
 /// Parse schema data block
 fn schema_data_block(input: &str) -> IResult<&str, (SchemaType, SchemaData)> {
+    let (input, _) = skip_comments_and_whitespace(input)?;  // Handle whitespace/comments before SCHEMA
     let (input, _) = tag("SCHEMA")(input)?;
     let (input, _) = multispace1(input)?;
     let (input, schema_name) = identifier(input)?;
     let (input, _) = multispace0(input)?;
     let (input, _) = tag("{")(input)?;
-    let (input, _) = multispace0(input)?;
+    let (input, _) = skip_comments_and_whitespace(input)?;  // Handle whitespace/comments after {
     
     let (input, instances) = many0(data_instance)(input)?;
     
-    let (input, _) = multispace0(input)?;
+    let (input, _) = skip_comments_and_whitespace(input)?;  // Handle whitespace/comments before }
     let (input, _) = tag("}")(input)?;
     
     let schema_type = parse_schema_type(&schema_name)
@@ -546,6 +544,7 @@ fn ira_value(input: &str) -> IResult<&str, IraValue> {
     alt((
         map(quoted_string, IraValue::Text),
         map(array_value, IraValue::Array),
+        map(uuid_value, IraValue::UUID),  // UUID parsing comes before number to avoid conflicts
         map(number, IraValue::Number),
         map(boolean_value, IraValue::Boolean),
         map(reference, |(schema_type, instance)| IraValue::Reference { 
@@ -586,6 +585,95 @@ fn boolean_value(input: &str) -> IResult<&str, bool> {
         map(tag("true"), |_| true),
         map(tag("false"), |_| false),
     ))(input)
+}
+
+/// Parse UUID/ID value (Country IDs: COUN1000-1999, League IDs: LEAG10000-19999, others: standard UUIDs)
+fn uuid_value(input: &str) -> IResult<&str, String> {
+    use crate::types::IraIdValidator;
+    
+    // Try Country ID format first (COUN1000-1999)
+    if input.starts_with("COUN") {
+        let (input, country_id) = recognize(tuple((
+            tag("COUN"),
+            take_while1(|c: char| c.is_ascii_digit()),  // 4 digits
+        )))(input)?;
+        
+        // Validate the Country ID format
+        if !IraIdValidator::is_valid_country_id(country_id) {
+            return Err(nom::Err::Error(nom::error::Error::new(input, nom::error::ErrorKind::Tag)));
+        }
+        
+        return Ok((input, country_id.to_string()));
+    }
+    
+    // Try League ID format (LEAG10000-19999)
+    if input.starts_with("LEAG") {
+        let (input, league_id) = recognize(tuple((
+            tag("LEAG"),
+            take_while1(|c: char| c.is_ascii_digit()),  // 5 digits
+        )))(input)?;
+        
+        // Validate the League ID format
+        if !IraIdValidator::is_valid_league_id(league_id) {
+            return Err(nom::Err::Error(nom::error::Error::new(input, nom::error::ErrorKind::Tag)));
+        }
+        
+        return Ok((input, league_id.to_string()));
+    }
+    
+    // Try Stadium ID format (STAD13000-13999)
+    if input.starts_with("STAD") {
+        let (input, stadium_id) = recognize(tuple((
+            tag("STAD"),
+            take_while1(|c: char| c.is_ascii_digit()),  // 5 digits
+        )))(input)?;
+        
+        // Validate the Stadium ID format
+        if !IraIdValidator::is_valid_stadium_id(stadium_id) {
+            return Err(nom::Err::Error(nom::error::Error::new(input, nom::error::ErrorKind::Tag)));
+        }
+        
+        return Ok((input, stadium_id.to_string()));
+    }
+    
+    // Try Team ID format (TEM10000-19999)
+    if input.starts_with("TEM") {
+        let (input, team_id) = recognize(tuple((
+            tag("TEM"),
+            take_while1(|c: char| c.is_ascii_digit()),  // 5 digits
+        )))(input)?;
+        
+        // Validate the Team ID format
+        if !IraIdValidator::is_valid_team_id(team_id) {
+            return Err(nom::Err::Error(nom::error::Error::new(input, nom::error::ErrorKind::Tag)));
+        }
+        
+        return Ok((input, team_id.to_string()));
+    }
+    
+    // Otherwise parse standard UUID pattern: 8-4-4-4-12 hex digits with dashes
+    let (input, uuid_str) = recognize(tuple((
+        take_while1(|c: char| c.is_ascii_hexdigit()),  // 8 digits
+        tag("-"),
+        take_while1(|c: char| c.is_ascii_hexdigit()),  // 4 digits
+        tag("-"),
+        take_while1(|c: char| c.is_ascii_hexdigit()),  // 4 digits
+        tag("-"),
+        take_while1(|c: char| c.is_ascii_hexdigit()),  // 4 digits
+        tag("-"),
+        take_while1(|c: char| c.is_ascii_hexdigit()),  // 12 digits
+    )))(input)?;
+    
+    // Validate the UUID format
+    if !IraIdValidator::is_valid_uuid(uuid_str) {
+        return Err(nom::Err::Error(nom::error::Error::new(input, nom::error::ErrorKind::Tag)));
+    }
+    
+    // Return normalized UUID
+    let normalized = IraIdValidator::normalize_uuid(uuid_str)
+        .map_err(|_| nom::Err::Error(nom::error::Error::new(input, nom::error::ErrorKind::Tag)))?;
+    
+    Ok((input, normalized))
 }
 
 /// Parse reference (@SchemaName)

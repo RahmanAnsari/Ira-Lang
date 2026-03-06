@@ -1,6 +1,7 @@
 NAMESPACE DATA {
     SCHEMA COUNTRIES {
         Samoa: {
+            ID: COUN1000,
             TIME_ZONE: 12,
             PHYSICAL_TENDENCY: 90,
             TICKET_PRICE_LEVELS: 5,
@@ -49,6 +50,7 @@ NAMESPACE DATA {
         },
 
         Brunei: {
+            ID: COUN1001,
             FOOTBALL_IMPORTANCE: 50,
             CONTINENT: ASIA,
             COACHING_EDUCATION: 45,
@@ -97,6 +99,7 @@ NAMESPACE DATA {
         },
 
         Ecuador: {
+            ID: COUN1002,
             AVERAGE_TRANSFER_BUDGET: 2500000,
             PACE_TENDENCY: 85,
             DOMESTIC_REPUTATION: 70,
@@ -145,6 +148,7 @@ NAMESPACE DATA {
         },
 
         Malaysia: {
+            ID: COUN1003,
             YOUTH_RATING: 55,
             MODERN_METHODS: 60,
             COUNTER_ATTACK_STYLE: 70,
@@ -193,6 +197,7 @@ NAMESPACE DATA {
         },
 
         Tahiti: {
+            ID: COUN1004,
             LAND_AREA: 4200,
             POPULATION: 280000,
             FOOTBALL_HISTORY: 60,
@@ -241,6 +246,7 @@ NAMESPACE DATA {
         },
 
         Bolivia: {
+            ID: COUN1005,
             TRAINING_CENTERS: 25,
             FOOTBALL_IMPORTANCE: 85,
             CONTINENT: SOUTH_AMERICA,
@@ -289,6 +295,7 @@ NAMESPACE DATA {
         },
 
         Oman: {
+            ID: COUN1006,
             AVERAGE_TRANSFER_BUDGET: 2000000,
             MEDICAL_SUPPORT: 70,
             TICKET_PRICE_LEVELS: 20,
@@ -337,6 +344,7 @@ NAMESPACE DATA {
         },
 
         Timor_Leste: {
+            ID: COUN1007,
             TECHNICAL_STYLE: 65,
             PHYSICAL_TENDENCY: 60,
             DIRECT_STYLE: 65,
@@ -385,6 +393,7 @@ NAMESPACE DATA {
         },
 
         Nepal: {
+            ID: COUN1008,
             COACHING_LEVEL: 35,
             AVERAGE_WAGE_LEVEL: 1500,
             CURRENCY_CODE: NPR,
@@ -433,6 +442,7 @@ NAMESPACE DATA {
         },
 
         Cook_Islands: {
+            ID: COUN1009,
             CODE: COK,
             NAME: "Cook Islands",
             COUNTER_ATTACK_STYLE: 75,
@@ -481,6 +491,7 @@ NAMESPACE DATA {
         },
 
         Fiji: {
+            ID: COUN1010,
             PACE_TENDENCY: 85,
             YOUTH_RATING: 50,
             NAME: "Fiji",
@@ -529,6 +540,7 @@ NAMESPACE DATA {
         },
 
         Venezuela: {
+            ID: COUN1011,
             CURRENCY_SYMBOL: "Bs.",
             MENTAL_TENDENCY: 80,
             SHORT_CODE: "VE",
@@ -577,6 +589,7 @@ NAMESPACE DATA {
         },
 
         New_Zealand: {
+            ID: COUN1012,
             SPONSORSHIP_LEVELS: 70,
             LAND_AREA: 268000,
             NAME: "New Zealand",
@@ -625,6 +638,7 @@ NAMESPACE DATA {
         },
 
         New_Caledonia: {
+            ID: COUN1013,
             FOOTBALL_HISTORY: 55,
             CONTINENTAL_CONFEDERATION: OFC,
             TECHNICAL_STYLE: 85,
@@ -673,6 +687,7 @@ NAMESPACE DATA {
         },
 
         Argentina: {
+            ID: COUN1014,
             CONTINENTAL_CONFEDERATION: CONMEBOL,
             CURRENCY_CODE: ARS,
             PHYSICAL_STYLE: 75,
@@ -721,6 +736,7 @@ NAMESPACE DATA {
         },
 
         Solomon_Islands: {
+            ID: COUN1015,
             LAND_AREA: 28900,
             AVERAGE_WAGE_BUDGET: 40000,
             PACE_TENDENCY: 85,
@@ -769,6 +785,7 @@ NAMESPACE DATA {
         },
 
         Syria: {
+            ID: COUN1016,
             CONTINENTAL_REPUTATION: 60,
             CODE: SYR,
             CONTINENTAL_CONFEDERATION: AFC,
@@ -817,6 +834,7 @@ NAMESPACE DATA {
         },
 
         American_Samoa: {
+            ID: COUN1017,
             POSSESSION_STYLE: 55,
             MENTAL_TENDENCY: 70,
             PHYSICAL_TENDENCY: 90,
@@ -865,6 +883,7 @@ NAMESPACE DATA {
         },
 
         Bhutan: {
+            ID: COUN1018,
             AVERAGE_WAGE_LEVEL: 4000,
             CONTINENTAL_REPUTATION: 25,
             TACTICAL_KNOWLEDGE: 35,
@@ -913,6 +932,7 @@ NAMESPACE DATA {
         },
 
         Jordan: {
+            ID: COUN1019,
             TECHNICAL_STYLE: 80,
             FOOTBALL_IMPORTANCE: 75,
             AVERAGE_TRANSFER_BUDGET: 800000,
@@ -961,6 +981,7 @@ NAMESPACE DATA {
         },
 
         Afghanistan: {
+            ID: COUN1020,
             FOOTBALL_HISTORY: 70,
             WORLD_REPUTATION: 25,
             CREATIVITY_TENDENCY: 80,
@@ -1009,6 +1030,7 @@ NAMESPACE DATA {
         },
 
         Kuwait: {
+            ID: COUN1021,
             WORLD_REPUTATION: 35,
             COACHING_EDUCATION: 65,
             TECHNICAL_STYLE: 80,
@@ -1057,6 +1079,7 @@ NAMESPACE DATA {
         },
 
         Sri_Lanka: {
+            ID: COUN1022,
             PHYSICAL_STYLE: 45,
             WORLD_REPUTATION: 20,
             TV_MONEY_DISTRIBUTION: 45,
@@ -1105,6 +1128,7 @@ NAMESPACE DATA {
         },
 
         Thailand: {
+            ID: COUN1023,
             WORLD_REPUTATION: 35,
             PACE_TENDENCY: 70,
             PHYSICAL_TENDENCY: 50,
@@ -1153,6 +1177,7 @@ NAMESPACE DATA {
         },
 
         Peru: {
+            ID: COUN1024,
             TECHNICAL_STYLE: 85,
             CODE: PER,
             TIME_ZONE: -5,
@@ -1201,6 +1226,7 @@ NAMESPACE DATA {
         },
 
         Maldives: {
+            ID: COUN1025,
             LAND_AREA: 300,
             CAPITAL: "Male",
             FOOTBALL_IMPORTANCE: 75,
@@ -1249,6 +1275,7 @@ NAMESPACE DATA {
         },
 
         Uzbekistan: {
+            ID: COUN1026,
             NAME: "Uzbekistan",
             TIME_ZONE: 5,
             FACILITIES_RATING: 50,
@@ -1297,6 +1324,7 @@ NAMESPACE DATA {
         },
 
         Japan: {
+            ID: COUN1027,
             PACE_TENDENCY: 70,
             COACHING_EDUCATION: 90,
             POPULATION: 125000000,
@@ -1345,6 +1373,7 @@ NAMESPACE DATA {
         },
 
         North_Korea: {
+            ID: COUN1028,
             COUNTER_ATTACK_STYLE: 80,
             SPONSORSHIP_LEVELS: 30,
             CODE: PRK,
@@ -1393,6 +1422,7 @@ NAMESPACE DATA {
         },
 
         Mongolia: {
+            ID: COUN1029,
             NAME: "Mongolia",
             POSSESSION_STYLE: 55,
             DOMESTIC_REPUTATION: 45,
@@ -1441,6 +1471,7 @@ NAMESPACE DATA {
         },
 
         Uruguay: {
+            ID: COUN1030,
             MODERN_METHODS: 85,
             TICKET_PRICE_LEVELS: 18,
             COUNTER_ATTACK_STYLE: 90,
@@ -1489,6 +1520,7 @@ NAMESPACE DATA {
         },
 
         Qatar: {
+            ID: COUN1031,
             CURRENCY_CODE: QAR,
             COACHING_EDUCATION: 80,
             FOOTBALL_IMPORTANCE: 85,
@@ -1537,6 +1569,7 @@ NAMESPACE DATA {
         },
 
         Myanmar: {
+            ID: COUN1032,
             PHYSICAL_STYLE: 55,
             CREATIVITY_TENDENCY: 75,
             FACILITIES_RATING: 35,
@@ -1585,6 +1618,7 @@ NAMESPACE DATA {
         },
 
         Bangladesh: {
+            ID: COUN1033,
             CONTINENTAL_REPUTATION: 45,
             TV_MONEY_DISTRIBUTION: 45,
             SPONSORSHIP_LEVELS: 40,
@@ -1633,6 +1667,7 @@ NAMESPACE DATA {
         },
 
         Indonesia: {
+            ID: COUN1034,
             PHYSICAL_STYLE: 50,
             FOOTBALL_HISTORY: 80,
             SPONSORSHIP_LEVELS: 60,
@@ -1681,6 +1716,7 @@ NAMESPACE DATA {
         },
 
         Pakistan: {
+            ID: COUN1035,
             CURRENCY_SYMBOL: "₨",
             MODERN_METHODS: 45,
             CAPITAL: "Islamabad",
@@ -1729,6 +1765,7 @@ NAMESPACE DATA {
         },
 
         Chile: {
+            ID: COUN1036,
             FOOTBALL_CULTURE: 90,
             MEDICAL_SUPPORT: 80,
             YOUTH_RATING: 75,
@@ -1777,6 +1814,7 @@ NAMESPACE DATA {
         },
 
         South_Korea: {
+            ID: COUN1037,
             LAND_AREA: 100000,
             CONTINENTAL_CONFEDERATION: AFC,
             CREATIVITY_TENDENCY: 80,
@@ -1825,6 +1863,7 @@ NAMESPACE DATA {
         },
 
         Cambodia: {
+            ID: COUN1038,
             AVERAGE_WAGE_BUDGET: 300000,
             CONTINENTAL_CONFEDERATION: AFC,
             CODE: "CAM",
@@ -1873,6 +1912,7 @@ NAMESPACE DATA {
         },
 
         China: {
+            ID: COUN1039,
             TRAINING_CENTERS: 100,
             TV_MONEY_DISTRIBUTION: 80,
             CODE: CHN,
@@ -1921,6 +1961,7 @@ NAMESPACE DATA {
         },
 
         Papua_New_Guinea: {
+            ID: COUN1040,
             FOOTBALL_IMPORTANCE: 90,
             PHYSICAL_TENDENCY: 90,
             CAPITAL: "Port Moresby",
@@ -1969,6 +2010,7 @@ NAMESPACE DATA {
         },
 
         Bahrain: {
+            ID: COUN1041,
             CODE: BHR,
             TRAINING_CENTERS: 20,
             TICKET_PRICE_LEVELS: 25,
@@ -2017,6 +2059,7 @@ NAMESPACE DATA {
         },
 
         Singapore: {
+            ID: COUN1042,
             ECONOMIC_STABILITY: 95,
             POSSESSION_STYLE: 75,
             COUNTER_ATTACK_STYLE: 60,
@@ -2065,6 +2108,7 @@ NAMESPACE DATA {
         },
 
         Hong_Kong: {
+            ID: COUN1043,
             DIRECT_STYLE: 50,
             TIME_ZONE: 8,
             TV_MONEY_DISTRIBUTION: 70,
@@ -2113,6 +2157,7 @@ NAMESPACE DATA {
         },
 
         Tajikistan: {
+            ID: COUN1044,
             FACILITIES_RATING: 30,
             PHYSICAL_STYLE: 70,
             CONTINENTAL_CONFEDERATION: AFC,
@@ -2161,6 +2206,7 @@ NAMESPACE DATA {
         },
 
         Kiribati: {
+            ID: COUN1045,
             NAME: "Kiribati",
             DIRECT_STYLE: 80,
             AVERAGE_WAGE_BUDGET: 6000,
@@ -2209,6 +2255,7 @@ NAMESPACE DATA {
         },
 
         Iran: {
+            ID: COUN1046,
             FOOTBALL_IMPORTANCE: 95,
             FOOTBALL_HISTORY: 110,
             MEDICAL_SUPPORT: 65,
@@ -2257,6 +2304,7 @@ NAMESPACE DATA {
         },
 
         Tonga: {
+            ID: COUN1047,
             COACHING_EDUCATION: 30,
             TRAINING_CENTERS: 6,
             WORLD_REPUTATION: 15,
@@ -2305,6 +2353,7 @@ NAMESPACE DATA {
         },
 
         Kyrgyzstan: {
+            ID: COUN1048,
             AVERAGE_WAGE_LEVEL: 1500,
             COACHING_EDUCATION: 40,
             TRAINING_CENTERS: 15,
@@ -2353,6 +2402,7 @@ NAMESPACE DATA {
         },
 
         Iraq: {
+            ID: COUN1049,
             POSSESSION_STYLE: 75,
             AVERAGE_WAGE_LEVEL: 6000,
             PACE_TENDENCY: 75,
@@ -2401,6 +2451,7 @@ NAMESPACE DATA {
         },
 
         Colombia: {
+            ID: COUN1050,
             TV_MONEY_DISTRIBUTION: 70,
             PHYSICAL_TENDENCY: 75,
             PRIMARY_LANGUAGE: "Spanish",
@@ -2449,6 +2500,7 @@ NAMESPACE DATA {
         },
 
         Palestine: {
+            ID: COUN1051,
             YOUTH_RATING: 55,
             POPULATION: 5000000,
             SPONSORSHIP_LEVELS: 40,
@@ -2497,6 +2549,7 @@ NAMESPACE DATA {
         },
 
         UAE: {
+            ID: COUN1052,
             SHORT_CODE: "AE",
             CONTINENT: ASIA,
             TRAINING_CENTERS: 60,
@@ -2545,6 +2598,7 @@ NAMESPACE DATA {
         },
 
         Guam: {
+            ID: COUN1053,
             NAME: "Guam",
             MODERN_METHODS: 55,
             CURRENCY_CODE: USD,
@@ -2593,6 +2647,7 @@ NAMESPACE DATA {
         },
 
         Turkmenistan: {
+            ID: COUN1054,
             CONTINENT: ASIA,
             COACHING_EDUCATION: 35,
             AVERAGE_TRANSFER_BUDGET: 300000,
@@ -2641,6 +2696,7 @@ NAMESPACE DATA {
         },
 
         Saudi_Arabia: {
+            ID: COUN1055,
             DOMESTIC_REPUTATION: 85,
             CAPITAL: "Riyadh",
             GDP_PER_CAPITA: 23000,
@@ -2689,6 +2745,7 @@ NAMESPACE DATA {
         },
 
         Tuvalu: {
+            ID: COUN1056,
             MODERN_METHODS: 25,
             TECHNICAL_TENDENCY: 55,
             PRIMARY_LANGUAGE: "English",
@@ -2737,6 +2794,7 @@ NAMESPACE DATA {
         },
 
         Australia: {
+            ID: COUN1057,
             CURRENCY_CODE: AUD,
             JUNIOR_COACHING: 75,
             CONTINENTAL_CONFEDERATION: AFC,
@@ -2785,6 +2843,7 @@ NAMESPACE DATA {
         },
 
         Northern_Mariana_Islands: {
+            ID: COUN1058,
             CODE: NMI,
             NAME: "Northern Mariana Islands",
             SHORT_CODE: "MP",
@@ -2833,6 +2892,7 @@ NAMESPACE DATA {
         },
 
         Paraguay: {
+            ID: COUN1059,
             DIRECT_STYLE: 80,
             FACILITIES_RATING: 60,
             TECHNICAL_STYLE: 75,
@@ -2881,6 +2941,7 @@ NAMESPACE DATA {
         },
 
         Brazil: {
+            ID: COUN1060,
             FOOTBALL_HISTORY: 200,
             MEDICAL_SUPPORT: 85,
             TECHNICAL_TENDENCY: 100,
@@ -2929,6 +2990,7 @@ NAMESPACE DATA {
         },
 
         Macau: {
+            ID: COUN1061,
             ECONOMIC_STABILITY: 90,
             FOOTBALL_CULTURE: 50,
             TRAINING_CENTERS: 8,
@@ -2977,6 +3039,7 @@ NAMESPACE DATA {
         },
 
         Lebanon: {
+            ID: COUN1062,
             TECHNICAL_STYLE: 85,
             AVERAGE_TRANSFER_BUDGET: 600000,
             DOMESTIC_REPUTATION: 55,
@@ -3025,6 +3088,7 @@ NAMESPACE DATA {
         },
 
         Yemen: {
+            ID: COUN1063,
             ECONOMIC_STABILITY: 20,
             MENTAL_TENDENCY: 85,
             TACTICAL_KNOWLEDGE: 50,
@@ -3073,6 +3137,7 @@ NAMESPACE DATA {
         },
 
         Laos: {
+            ID: COUN1064,
             ECONOMIC_STABILITY: 65,
             GDP_PER_CAPITA: 2700,
             FOOTBALL_CULTURE: 65,
@@ -3121,6 +3186,7 @@ NAMESPACE DATA {
         },
 
         Philippines: {
+            ID: COUN1065,
             MENTAL_TENDENCY: 70,
             AVERAGE_TRANSFER_BUDGET: 500000,
             FOOTBALL_HISTORY: 60,
@@ -3169,6 +3235,7 @@ NAMESPACE DATA {
         },
 
         India: {
+            ID: COUN1066,
             PHYSICAL_TENDENCY: 40,
             TACTICAL_KNOWLEDGE: 60,
             PHYSICAL_STYLE: 35,
@@ -3217,6 +3284,7 @@ NAMESPACE DATA {
         },
 
         Vietnam: {
+            ID: COUN1067,
             TICKET_PRICE_LEVELS: 15,
             PHYSICAL_STYLE: 50,
             WORLD_REPUTATION: 30,
@@ -3265,6 +3333,7 @@ NAMESPACE DATA {
         },
 
         Chinese_Taipei: {
+            ID: COUN1068,
             TACTICAL_KNOWLEDGE: 60,
             TRAINING_CENTERS: 30,
             DIRECT_STYLE: 50,
@@ -3313,6 +3382,7 @@ NAMESPACE DATA {
         },
 
         Vanuatu: {
+            ID: COUN1069,
             COUNTER_ATTACK_STYLE: 85,
             FACILITIES_RATING: 30,
             TECHNICAL_STYLE: 65,
@@ -3360,5 +3430,2199 @@ NAMESPACE DATA {
             TACTICAL_KNOWLEDGE: 35,
         },
 
+    }
+
+    // League Schema with realistic Indian Super League data
+    SCHEMA LEAGUES {
+        Indian_Super_League: {
+            leagueId: LEAG12001,
+            countryId: COUN1066,
+            name: "Hero Indian Super League",
+            shortName: "ISL",
+            foundedYear: 2013,
+            tier: 1,
+            totalTeams: 12,
+            currentSeason: 11,
+            status: "active",
+            leaguePrestige: 68,
+            
+            // Financial Simulation (ISL 2024 realistic values)
+            salaryCapAmount: 8000000,
+            salaryFloorAmount: 3500000,
+            revenueSharing: 35,
+            tvRevenue: 15000000,
+            sponsorshipRevenue: 25000000,
+            ticketRevenueBase: 800000,
+            transferTaxRate: 0,
+            luxuryTaxThreshold: 10000000,
+            bankruptcyProtection: true,
+            prizeMoneyTotal: 4500000,
+            
+            // Competition Structure (ISL format)
+            regularSeasonGames: 20,
+            playoffTeams: 6,
+            playoffFormat: "bracket",
+            promotionSlots: 0,
+            relegationSlots: 0,
+            conferenceCount: 1,
+            scheduleBalance: 45,
+            seasonStartWeek: 42,
+            seasonLength: 22,
+            
+            // Gameplay Rules (AFC/ISL regulations)
+            maxForeignPlayers: 6,
+            minHomegrownPlayers: 5,
+            substitutionRules: 5,
+            transferWindowStart: 20,
+            transferWindowEnd: 35,
+            contractLengthMax: 4,
+            ageLimitMin: 18,
+            disciplinaryPoints: 10,
+            matchOfficials: "neutral",
+            
+            // Performance Tracking (Indian football context)
+            championshipPoints: 62,
+            tiebreakMethod: "head_to_head",
+            attendanceImpact: 75,
+            homeAdvantage: 72,
+            weatherEffects: true,
+            injuryRate: 14,
+            retirementAge: 34,
+            youthDevelopment: 58,
+        },
+    }
+
+    // Stadium Schema with comprehensive venue properties
+    SCHEMA STADIUMS {
+        Salt_Lake_Stadium: {
+            stadiumId: STAD13001,
+            countryId: COUN1066,
+            name: "Vivekananda Yuba Bharati Krirangan",
+            nickname: "Salt Lake Stadium",
+            city: "Kolkata",
+            country: "India",
+            openedYear: 1984,
+            lastRenovation: 2011,
+            ownership: "government",
+            
+            // Capacity & Seating
+            totalCapacity: 85000,
+            seatedCapacity: 85000,
+            standingCapacity: 0,
+            executiveBoxes: 12,
+            disabledAccess: 75,
+            awaySectionSize: 8500,
+            capacityUtilization: 68,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 82,
+            pitchType: "grass",
+            undersoilHeating: false,
+            roofCoverage: 65,
+            floodlightQuality: 85,
+            drainageSystem: 70,
+            structuralCondition: 78,
+            expansionPotential: false,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 88,
+            crowdNoise: 92,
+            atmosphereRating: 85,
+            acousticDesign: 80,
+            supporterCulture: 95,
+            rivalryIntensity: 90,
+            weatherExposure: 45,
+            intimidationFactor: 87,
+            
+            // Facilities & Amenities
+            corporateFacilities: 72,
+            mediaFacilities: 80,
+            conferenceFacilities: 65,
+            restaurantQuality: 60,
+            parkingSpaces: 2500,
+            publicTransport: 85,
+            securitySystems: 78,
+            medicalFacilities: 75,
+            playerTunnels: 80,
+            
+            // Commercial & Financial
+            namingRights: 0,
+            annualRunningCosts: 2500000,
+            ticketPriceLevel: 2,
+            concessionRevenue: 150000,
+            eventHostingCapacity: 90,
+            broadcastValue: 85,
+            
+            // Technical & Safety
+            safetyRating: 82,
+            emergencyExits: 24,
+            cameraSystem: 88,
+            communicationSystems: 75,
+            
+            // Performance Impact
+            weatherResistance: 70,
+            pitchAdvantage: 78,
+            fatigueImpact: 25,
+        },
+
+        Fatorda_Stadium: {
+            stadiumId: STAD13002,
+            countryId: COUN1066,
+            name: "Pandit Jawaharlal Nehru Stadium",
+            nickname: "Fatorda Stadium",
+            city: "Margao",
+            country: "India",
+            openedYear: 1989,
+            lastRenovation: 2013,
+            ownership: "government",
+            
+            // Capacity & Seating
+            totalCapacity: 19000,
+            seatedCapacity: 19000,
+            standingCapacity: 0,
+            executiveBoxes: 6,
+            disabledAccess: 80,
+            awaySectionSize: 1900,
+            capacityUtilization: 85,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 88,
+            pitchType: "grass",
+            undersoilHeating: false,
+            roofCoverage: 85,
+            floodlightQuality: 90,
+            drainageSystem: 85,
+            structuralCondition: 88,
+            expansionPotential: true,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 82,
+            crowdNoise: 88,
+            atmosphereRating: 90,
+            acousticDesign: 85,
+            supporterCulture: 88,
+            rivalryIntensity: 85,
+            weatherExposure: 35,
+            intimidationFactor: 80,
+            
+            // Facilities & Amenities
+            corporateFacilities: 85,
+            mediaFacilities: 88,
+            conferenceFacilities: 80,
+            restaurantQuality: 75,
+            parkingSpaces: 800,
+            publicTransport: 70,
+            securitySystems: 85,
+            medicalFacilities: 88,
+            playerTunnels: 90,
+            
+            // Commercial & Financial
+            namingRights: 0,
+            annualRunningCosts: 800000,
+            ticketPriceLevel: 3,
+            concessionRevenue: 80000,
+            eventHostingCapacity: 75,
+            broadcastValue: 90,
+            
+            // Technical & Safety
+            safetyRating: 90,
+            emergencyExits: 12,
+            cameraSystem: 92,
+            communicationSystems: 88,
+            
+            // Performance Impact
+            weatherResistance: 80,
+            pitchAdvantage: 85,
+            fatigueImpact: 15,
+        },
+
+        Kanteerava_Stadium: {
+            stadiumId: STAD13003,
+            countryId: COUN1066,
+            name: "Sree Kanteerava Stadium",
+            nickname: "Kanteerava",
+            city: "Bengaluru",
+            country: "India",
+            openedYear: 1997,
+            lastRenovation: 2017,
+            ownership: "government",
+            
+            // Capacity & Seating
+            totalCapacity: 25810,
+            seatedCapacity: 25810,
+            standingCapacity: 0,
+            executiveBoxes: 8,
+            disabledAccess: 85,
+            awaySectionSize: 2580,
+            capacityUtilization: 78,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 85,
+            pitchType: "grass",
+            undersoilHeating: false,
+            roofCoverage: 75,
+            floodlightQuality: 88,
+            drainageSystem: 82,
+            structuralCondition: 85,
+            expansionPotential: false,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 80,
+            crowdNoise: 85,
+            atmosphereRating: 83,
+            acousticDesign: 78,
+            supporterCulture: 90,
+            rivalryIntensity: 75,
+            weatherExposure: 40,
+            intimidationFactor: 78,
+            
+            // Facilities & Amenities
+            corporateFacilities: 78,
+            mediaFacilities: 82,
+            conferenceFacilities: 75,
+            restaurantQuality: 70,
+            parkingSpaces: 1200,
+            publicTransport: 88,
+            securitySystems: 80,
+            medicalFacilities: 82,
+            playerTunnels: 85,
+            
+            // Commercial & Financial
+            namingRights: 0,
+            annualRunningCosts: 1200000,
+            ticketPriceLevel: 4,
+            concessionRevenue: 120000,
+            eventHostingCapacity: 80,
+            broadcastValue: 85,
+            
+            // Technical & Safety
+            safetyRating: 85,
+            emergencyExits: 16,
+            cameraSystem: 85,
+            communicationSystems: 82,
+            
+            // Performance Impact
+            weatherResistance: 75,
+            pitchAdvantage: 80,
+            fatigueImpact: 18,
+        },
+
+        Marina_Arena: {
+            stadiumId: STAD13004,
+            countryId: COUN1066,
+            name: "Marina Arena",
+            nickname: "Marina",
+            city: "Chennai",
+            country: "India",
+            openedYear: 2019,
+            lastRenovation: 2019,
+            ownership: "private",
+            
+            // Capacity & Seating
+            totalCapacity: 40000,
+            seatedCapacity: 40000,
+            standingCapacity: 0,
+            executiveBoxes: 15,
+            disabledAccess: 95,
+            awaySectionSize: 4000,
+            capacityUtilization: 82,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 92,
+            pitchType: "hybrid",
+            undersoilHeating: false,
+            roofCoverage: 90,
+            floodlightQuality: 95,
+            drainageSystem: 90,
+            structuralCondition: 95,
+            expansionPotential: true,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 85,
+            crowdNoise: 90,
+            atmosphereRating: 88,
+            acousticDesign: 90,
+            supporterCulture: 92,
+            rivalryIntensity: 88,
+            weatherExposure: 25,
+            intimidationFactor: 85,
+            
+            // Facilities & Amenities
+            corporateFacilities: 90,
+            mediaFacilities: 95,
+            conferenceFacilities: 88,
+            restaurantQuality: 85,
+            parkingSpaces: 2000,
+            publicTransport: 85,
+            securitySystems: 92,
+            medicalFacilities: 90,
+            playerTunnels: 95,
+            
+            // Commercial & Financial
+            namingRights: 5000000,
+            annualRunningCosts: 2200000,
+            ticketPriceLevel: 6,
+            concessionRevenue: 250000,
+            eventHostingCapacity: 95,
+            broadcastValue: 95,
+            
+            // Technical & Safety
+            safetyRating: 95,
+            emergencyExits: 24,
+            cameraSystem: 95,
+            communicationSystems: 95,
+            
+            // Performance Impact
+            weatherResistance: 88,
+            pitchAdvantage: 88,
+            fatigueImpact: 12,
+        },
+
+        JLN_Delhi: {
+            stadiumId: STAD13005,
+            countryId: COUN1066,
+            name: "Jawaharlal Nehru Stadium",
+            nickname: "JLN Delhi",
+            city: "New Delhi",
+            country: "India",
+            openedYear: 1982,
+            lastRenovation: 2010,
+            ownership: "government",
+            
+            // Capacity & Seating
+            totalCapacity: 60254,
+            seatedCapacity: 60254,
+            standingCapacity: 0,
+            executiveBoxes: 20,
+            disabledAccess: 80,
+            awaySectionSize: 6000,
+            capacityUtilization: 65,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 80,
+            pitchType: "grass",
+            undersoilHeating: false,
+            roofCoverage: 70,
+            floodlightQuality: 85,
+            drainageSystem: 75,
+            structuralCondition: 78,
+            expansionPotential: false,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 75,
+            crowdNoise: 78,
+            atmosphereRating: 75,
+            acousticDesign: 70,
+            supporterCulture: 75,
+            rivalryIntensity: 80,
+            weatherExposure: 55,
+            intimidationFactor: 72,
+            
+            // Facilities & Amenities
+            corporateFacilities: 75,
+            mediaFacilities: 85,
+            conferenceFacilities: 80,
+            restaurantQuality: 65,
+            parkingSpaces: 3000,
+            publicTransport: 90,
+            securitySystems: 78,
+            medicalFacilities: 80,
+            playerTunnels: 80,
+            
+            // Commercial & Financial
+            namingRights: 0,
+            annualRunningCosts: 3500000,
+            ticketPriceLevel: 5,
+            concessionRevenue: 200000,
+            eventHostingCapacity: 85,
+            broadcastValue: 88,
+            
+            // Technical & Safety
+            safetyRating: 80,
+            emergencyExits: 36,
+            cameraSystem: 82,
+            communicationSystems: 80,
+            
+            // Performance Impact
+            weatherResistance: 65,
+            pitchAdvantage: 75,
+            fatigueImpact: 22,
+        },
+
+        JRD_Tata_Complex: {
+            stadiumId: STAD13006,
+            countryId: COUN1066,
+            name: "JRD Tata Sports Complex",
+            nickname: "JRD Tata",
+            city: "Jamshedpur",
+            country: "India",
+            openedYear: 2004,
+            lastRenovation: 2018,
+            ownership: "private",
+            
+            // Capacity & Seating
+            totalCapacity: 24424,
+            seatedCapacity: 24424,
+            standingCapacity: 0,
+            executiveBoxes: 10,
+            disabledAccess: 85,
+            awaySectionSize: 2400,
+            capacityUtilization: 88,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 88,
+            pitchType: "grass",
+            undersoilHeating: false,
+            roofCoverage: 80,
+            floodlightQuality: 90,
+            drainageSystem: 85,
+            structuralCondition: 88,
+            expansionPotential: true,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 90,
+            crowdNoise: 95,
+            atmosphereRating: 92,
+            acousticDesign: 85,
+            supporterCulture: 95,
+            rivalryIntensity: 90,
+            weatherExposure: 40,
+            intimidationFactor: 92,
+            
+            // Facilities & Amenities
+            corporateFacilities: 85,
+            mediaFacilities: 88,
+            conferenceFacilities: 82,
+            restaurantQuality: 75,
+            parkingSpaces: 1500,
+            publicTransport: 70,
+            securitySystems: 88,
+            medicalFacilities: 85,
+            playerTunnels: 90,
+            
+            // Commercial & Financial
+            namingRights: 2000000,
+            annualRunningCosts: 1500000,
+            ticketPriceLevel: 3,
+            concessionRevenue: 150000,
+            eventHostingCapacity: 75,
+            broadcastValue: 88,
+            
+            // Technical & Safety
+            safetyRating: 88,
+            emergencyExits: 18,
+            cameraSystem: 90,
+            communicationSystems: 85,
+            
+            // Performance Impact
+            weatherResistance: 78,
+            pitchAdvantage: 85,
+            fatigueImpact: 16,
+        },
+
+        JLN_Kaloor: {
+            stadiumId: STAD13007,
+            countryId: COUN1066,
+            name: "Jawaharlal Nehru International Stadium",
+            nickname: "Kaloor Stadium",
+            city: "Kochi",
+            country: "India",
+            openedYear: 1996,
+            lastRenovation: 2015,
+            ownership: "government",
+            
+            // Capacity & Seating
+            totalCapacity: 40000,
+            seatedCapacity: 40000,
+            standingCapacity: 0,
+            executiveBoxes: 12,
+            disabledAccess: 82,
+            awaySectionSize: 4000,
+            capacityUtilization: 90,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 85,
+            pitchType: "grass",
+            undersoilHeating: false,
+            roofCoverage: 85,
+            floodlightQuality: 88,
+            drainageSystem: 88,
+            structuralCondition: 82,
+            expansionPotential: false,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 92,
+            crowdNoise: 98,
+            atmosphereRating: 95,
+            acousticDesign: 88,
+            supporterCulture: 98,
+            rivalryIntensity: 85,
+            weatherExposure: 30,
+            intimidationFactor: 95,
+            
+            // Facilities & Amenities
+            corporateFacilities: 78,
+            mediaFacilities: 85,
+            conferenceFacilities: 75,
+            restaurantQuality: 70,
+            parkingSpaces: 2000,
+            publicTransport: 75,
+            securitySystems: 82,
+            medicalFacilities: 80,
+            playerTunnels: 88,
+            
+            // Commercial & Financial
+            namingRights: 0,
+            annualRunningCosts: 2000000,
+            ticketPriceLevel: 4,
+            concessionRevenue: 180000,
+            eventHostingCapacity: 82,
+            broadcastValue: 90,
+            
+            // Technical & Safety
+            safetyRating: 85,
+            emergencyExits: 24,
+            cameraSystem: 88,
+            communicationSystems: 82,
+            
+            // Performance Impact
+            weatherResistance: 82,
+            pitchAdvantage: 88,
+            fatigueImpact: 14,
+        },
+
+        Kishore_Bharati: {
+            stadiumId: STAD13008,
+            countryId: COUN1066,
+            name: "Kishore Bharati Krirangan",
+            nickname: "Kishore Bharati",
+            city: "Kolkata",
+            country: "India",
+            openedYear: 1981,
+            lastRenovation: 2008,
+            ownership: "government",
+            
+            // Capacity & Seating
+            totalCapacity: 12000,
+            seatedCapacity: 12000,
+            standingCapacity: 0,
+            executiveBoxes: 4,
+            disabledAccess: 70,
+            awaySectionSize: 1200,
+            capacityUtilization: 95,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 78,
+            pitchType: "grass",
+            undersoilHeating: false,
+            roofCoverage: 60,
+            floodlightQuality: 80,
+            drainageSystem: 70,
+            structuralCondition: 72,
+            expansionPotential: false,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 88,
+            crowdNoise: 95,
+            atmosphereRating: 92,
+            acousticDesign: 85,
+            supporterCulture: 95,
+            rivalryIntensity: 95,
+            weatherExposure: 50,
+            intimidationFactor: 90,
+            
+            // Facilities & Amenities
+            corporateFacilities: 65,
+            mediaFacilities: 75,
+            conferenceFacilities: 60,
+            restaurantQuality: 60,
+            parkingSpaces: 500,
+            publicTransport: 88,
+            securitySystems: 75,
+            medicalFacilities: 70,
+            playerTunnels: 75,
+            
+            // Commercial & Financial
+            namingRights: 0,
+            annualRunningCosts: 600000,
+            ticketPriceLevel: 2,
+            concessionRevenue: 50000,
+            eventHostingCapacity: 60,
+            broadcastValue: 75,
+            
+            // Technical & Safety
+            safetyRating: 75,
+            emergencyExits: 8,
+            cameraSystem: 75,
+            communicationSystems: 70,
+            
+            // Performance Impact
+            weatherResistance: 65,
+            pitchAdvantage: 82,
+            fatigueImpact: 20,
+        },
+
+        Mumbai_Football_Arena: {
+            stadiumId: STAD13009,
+            countryId: COUN1066,
+            name: "Mumbai Football Arena",
+            nickname: "MFA",
+            city: "Mumbai",
+            country: "India",
+            openedYear: 2014,
+            lastRenovation: 2020,
+            ownership: "private",
+            
+            // Capacity & Seating
+            totalCapacity: 7000,
+            seatedCapacity: 7000,
+            standingCapacity: 0,
+            executiveBoxes: 8,
+            disabledAccess: 90,
+            awaySectionSize: 700,
+            capacityUtilization: 98,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 90,
+            pitchType: "hybrid",
+            undersoilHeating: false,
+            roofCoverage: 95,
+            floodlightQuality: 92,
+            drainageSystem: 88,
+            structuralCondition: 92,
+            expansionPotential: false,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 85,
+            crowdNoise: 92,
+            atmosphereRating: 88,
+            acousticDesign: 92,
+            supporterCulture: 88,
+            rivalryIntensity: 80,
+            weatherExposure: 15,
+            intimidationFactor: 85,
+            
+            // Facilities & Amenities
+            corporateFacilities: 88,
+            mediaFacilities: 90,
+            conferenceFacilities: 85,
+            restaurantQuality: 82,
+            parkingSpaces: 300,
+            publicTransport: 95,
+            securitySystems: 90,
+            medicalFacilities: 88,
+            playerTunnels: 92,
+            
+            // Commercial & Financial
+            namingRights: 3000000,
+            annualRunningCosts: 800000,
+            ticketPriceLevel: 8,
+            concessionRevenue: 120000,
+            eventHostingCapacity: 85,
+            broadcastValue: 92,
+            
+            // Technical & Safety
+            safetyRating: 92,
+            emergencyExits: 10,
+            cameraSystem: 95,
+            communicationSystems: 92,
+            
+            // Performance Impact
+            weatherResistance: 92,
+            pitchAdvantage: 85,
+            fatigueImpact: 8,
+        },
+
+        Indira_Gandhi_Stadium: {
+            stadiumId: STAD13010,
+            countryId: COUN1066,
+            name: "Indira Gandhi Athletic Stadium",
+            nickname: "Guwahati Stadium",
+            city: "Guwahati",
+            country: "India",
+            openedYear: 2007,
+            lastRenovation: 2016,
+            ownership: "government",
+            
+            // Capacity & Seating
+            totalCapacity: 21600,
+            seatedCapacity: 21600,
+            standingCapacity: 0,
+            executiveBoxes: 6,
+            disabledAccess: 78,
+            awaySectionSize: 2160,
+            capacityUtilization: 85,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 82,
+            pitchType: "grass",
+            undersoilHeating: false,
+            roofCoverage: 75,
+            floodlightQuality: 85,
+            drainageSystem: 80,
+            structuralCondition: 80,
+            expansionPotential: true,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 88,
+            crowdNoise: 90,
+            atmosphereRating: 85,
+            acousticDesign: 80,
+            supporterCulture: 92,
+            rivalryIntensity: 75,
+            weatherExposure: 45,
+            intimidationFactor: 85,
+            
+            // Facilities & Amenities
+            corporateFacilities: 75,
+            mediaFacilities: 80,
+            conferenceFacilities: 70,
+            restaurantQuality: 65,
+            parkingSpaces: 1000,
+            publicTransport: 65,
+            securitySystems: 78,
+            medicalFacilities: 75,
+            playerTunnels: 82,
+            
+            // Commercial & Financial
+            namingRights: 0,
+            annualRunningCosts: 1100000,
+            ticketPriceLevel: 3,
+            concessionRevenue: 80000,
+            eventHostingCapacity: 70,
+            broadcastValue: 82,
+            
+            // Technical & Safety
+            safetyRating: 80,
+            emergencyExits: 14,
+            cameraSystem: 80,
+            communicationSystems: 78,
+            
+            // Performance Impact
+            weatherResistance: 72,
+            pitchAdvantage: 80,
+            fatigueImpact: 18,
+        },
+
+        Kalinga_Stadium: {
+            stadiumId: STAD13011,
+            countryId: COUN1066,
+            name: "Kalinga Stadium",
+            nickname: "Kalinga",
+            city: "Bhubaneswar",
+            country: "India",
+            openedYear: 2010,
+            lastRenovation: 2018,
+            ownership: "government",
+            
+            // Capacity & Seating
+            totalCapacity: 15000,
+            seatedCapacity: 15000,
+            standingCapacity: 0,
+            executiveBoxes: 6,
+            disabledAccess: 85,
+            awaySectionSize: 1500,
+            capacityUtilization: 90,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 88,
+            pitchType: "grass",
+            undersoilHeating: false,
+            roofCoverage: 80,
+            floodlightQuality: 90,
+            drainageSystem: 85,
+            structuralCondition: 88,
+            expansionPotential: true,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 85,
+            crowdNoise: 88,
+            atmosphereRating: 88,
+            acousticDesign: 85,
+            supporterCulture: 90,
+            rivalryIntensity: 78,
+            weatherExposure: 35,
+            intimidationFactor: 82,
+            
+            // Facilities & Amenities
+            corporateFacilities: 82,
+            mediaFacilities: 85,
+            conferenceFacilities: 78,
+            restaurantQuality: 70,
+            parkingSpaces: 800,
+            publicTransport: 72,
+            securitySystems: 85,
+            medicalFacilities: 82,
+            playerTunnels: 88,
+            
+            // Commercial & Financial
+            namingRights: 1000000,
+            annualRunningCosts: 900000,
+            ticketPriceLevel: 3,
+            concessionRevenue: 75000,
+            eventHostingCapacity: 80,
+            broadcastValue: 85,
+            
+            // Technical & Safety
+            safetyRating: 88,
+            emergencyExits: 12,
+            cameraSystem: 88,
+            communicationSystems: 82,
+            
+            // Performance Impact
+            weatherResistance: 78,
+            pitchAdvantage: 85,
+            fatigueImpact: 16,
+        },
+
+        JLN_Mohali: {
+            stadiumId: STAD13012,
+            countryId: COUN1066,
+            name: "Jawaharlal Nehru Stadium",
+            nickname: "JLN Mohali",
+            city: "Mohali",
+            country: "India",
+            openedYear: 1993,
+            lastRenovation: 2011,
+            ownership: "government",
+            
+            // Capacity & Seating
+            totalCapacity: 60254,
+            seatedCapacity: 60254,
+            standingCapacity: 0,
+            executiveBoxes: 18,
+            disabledAccess: 78,
+            awaySectionSize: 6000,
+            capacityUtilization: 60,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 82,
+            pitchType: "grass",
+            undersoilHeating: false,
+            roofCoverage: 65,
+            floodlightQuality: 88,
+            drainageSystem: 78,
+            structuralCondition: 80,
+            expansionPotential: false,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 78,
+            crowdNoise: 80,
+            atmosphereRating: 78,
+            acousticDesign: 75,
+            supporterCulture: 82,
+            rivalryIntensity: 75,
+            weatherExposure: 50,
+            intimidationFactor: 75,
+            
+            // Facilities & Amenities
+            corporateFacilities: 78,
+            mediaFacilities: 82,
+            conferenceFacilities: 75,
+            restaurantQuality: 68,
+            parkingSpaces: 2500,
+            publicTransport: 80,
+            securitySystems: 80,
+            medicalFacilities: 78,
+            playerTunnels: 82,
+            
+            // Commercial & Financial
+            namingRights: 0,
+            annualRunningCosts: 3200000,
+            ticketPriceLevel: 4,
+            concessionRevenue: 180000,
+            eventHostingCapacity: 80,
+            broadcastValue: 85,
+            
+            // Technical & Safety
+            safetyRating: 82,
+            emergencyExits: 32,
+            cameraSystem: 85,
+            communicationSystems: 80,
+            
+            // Performance Impact
+            weatherResistance: 70,
+            pitchAdvantage: 78,
+            fatigueImpact: 20,
+        },
+
+        Varanasi_Stadium: {
+            stadiumId: STAD13013,
+            countryId: COUN1066,
+            name: "Rajkiya Engineering College Stadium",
+            nickname: "REC Stadium",
+            city: "Varanasi",
+            country: "India",
+            openedYear: 2022,
+            lastRenovation: 2022,
+            ownership: "government",
+            
+            // Capacity & Seating
+            totalCapacity: 18000,
+            seatedCapacity: 18000,
+            standingCapacity: 0,
+            executiveBoxes: 8,
+            disabledAccess: 90,
+            awaySectionSize: 1800,
+            capacityUtilization: 85,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 90,
+            pitchType: "hybrid",
+            undersoilHeating: false,
+            roofCoverage: 85,
+            floodlightQuality: 92,
+            drainageSystem: 88,
+            structuralCondition: 95,
+            expansionPotential: true,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 85,
+            crowdNoise: 88,
+            atmosphereRating: 85,
+            acousticDesign: 88,
+            supporterCulture: 88,
+            rivalryIntensity: 80,
+            weatherExposure: 35,
+            intimidationFactor: 82,
+            
+            // Facilities & Amenities
+            corporateFacilities: 85,
+            mediaFacilities: 90,
+            conferenceFacilities: 82,
+            restaurantQuality: 75,
+            parkingSpaces: 1000,
+            publicTransport: 70,
+            securitySystems: 90,
+            medicalFacilities: 88,
+            playerTunnels: 92,
+            
+            // Commercial & Financial
+            namingRights: 0,
+            annualRunningCosts: 1000000,
+            ticketPriceLevel: 3,
+            concessionRevenue: 90000,
+            eventHostingCapacity: 75,
+            broadcastValue: 85,
+            
+            // Technical & Safety
+            safetyRating: 92,
+            emergencyExits: 14,
+            cameraSystem: 92,
+            communicationSystems: 88,
+            
+            // Performance Impact
+            weatherResistance: 80,
+            pitchAdvantage: 88,
+            fatigueImpact: 14,
+        },
+
+        JLN_Delhi_SC: {
+            stadiumId: STAD13014,
+            countryId: COUN1066,
+            name: "Jawaharlal Nehru Stadium",
+            nickname: "JLN Delhi SC",
+            city: "New Delhi",
+            country: "India",
+            openedYear: 1982,
+            lastRenovation: 2010,
+            ownership: "government",
+            
+            // Capacity & Seating
+            totalCapacity: 60254,
+            seatedCapacity: 60254,
+            standingCapacity: 0,
+            executiveBoxes: 20,
+            disabledAccess: 80,
+            awaySectionSize: 6000,
+            capacityUtilization: 62,
+            
+            // Physical Infrastructure
+            pitchLength: 105,
+            pitchWidth: 68,
+            pitchQuality: 80,
+            pitchType: "grass",
+            undersoilHeating: false,
+            roofCoverage: 70,
+            floodlightQuality: 85,
+            drainageSystem: 75,
+            structuralCondition: 78,
+            expansionPotential: false,
+            
+            // Atmosphere & Environment
+            homeAdvantage: 73,
+            crowdNoise: 76,
+            atmosphereRating: 73,
+            acousticDesign: 70,
+            supporterCulture: 72,
+            rivalryIntensity: 78,
+            weatherExposure: 55,
+            intimidationFactor: 70,
+            
+            // Facilities & Amenities
+            corporateFacilities: 75,
+            mediaFacilities: 85,
+            conferenceFacilities: 80,
+            restaurantQuality: 65,
+            parkingSpaces: 3000,
+            publicTransport: 90,
+            securitySystems: 78,
+            medicalFacilities: 80,
+            playerTunnels: 80,
+            
+            // Commercial & Financial
+            namingRights: 0,
+            annualRunningCosts: 3500000,
+            ticketPriceLevel: 5,
+            concessionRevenue: 190000,
+            eventHostingCapacity: 85,
+            broadcastValue: 86,
+            
+            // Technical & Safety
+            safetyRating: 80,
+            emergencyExits: 36,
+            cameraSystem: 82,
+            communicationSystems: 80,
+            
+            // Performance Impact
+            weatherResistance: 65,
+            pitchAdvantage: 73,
+            fatigueImpact: 24,
+        },
+    }
+
+    // Team Schema with comprehensive football team properties
+    SCHEMA TEAMS {
+        Bengaluru_FC: {
+            teamId: TEM14001,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13003,
+            name: "Bengaluru FC",
+            shortName: "BFC",
+            nickname: "Blues",
+            foundedYear: 2013,
+            city: "Bengaluru",
+            primaryColor: "Blue",
+            
+            // Financial Management
+            transferBudget: 8000000,
+            wageBudget: 12000000,
+            bankBalance: 5000000,
+            debt: 2000000,
+            revenue: 15000000,
+            ticketPrices: 4,
+            commercialDeals: 8000000,
+            tvMoney: 3000000,
+            luxuryTax: 0,
+            bankruptcyRisk: 15,
+            sugarDaddy: false,
+            profitabilityTarget: 2000000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "4-2-3-1",
+            playingPhilosophy: "possession",
+            attackingMentality: 75,
+            defensiveMentality: 70,
+            possessionStyle: 78,
+            counterAttackSpeed: 65,
+            pressing: 72,
+            creativity: 80,
+            directness: 45,
+            width: 75,
+            tempo: 72,
+            setPlayerFocus: 68,
+            teamCohesion: 85,
+            tacticalFamiliarity: 82,
+            mentalStrength: 78,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 75,
+            youthAcademy: 80,
+            medicalFacilities: 78,
+            scoutingNetwork: 72,
+            dataAnalytics: 85,
+            
+            // Performance & Reputation
+            overallRating: 78,
+            domesticReputation: 85,
+            continentalReputation: 65,
+            worldReputation: 45,
+            currentForm: 75,
+            homeAdvantage: 82,
+            awayPerformance: 68,
+            bigGameMentality: 80,
+            consistency: 75,
+            clutchFactor: 78,
+            
+            // Squad & Management
+            squadSize: 28,
+            averageAge: 26.5,
+            foreignPlayerCount: 6,
+            homegrownPlayers: 8,
+            injuryProneness: 18,
+            squadDepth: 72,
+            teamSpirit: 85,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 75,
+            trophyHistory: 2,
+            managerExpectations: 78,
+        },
+
+        Kerala_Blasters: {
+            teamId: TEM14002,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13007,
+            name: "Kerala Blasters FC",
+            shortName: "KBFC",
+            nickname: "Manjappada",
+            foundedYear: 2014,
+            city: "Kochi",
+            primaryColor: "Yellow",
+            
+            // Financial Management
+            transferBudget: 7500000,
+            wageBudget: 11000000,
+            bankBalance: 4500000,
+            debt: 1500000,
+            revenue: 14000000,
+            ticketPrices: 3,
+            commercialDeals: 7000000,
+            tvMoney: 3000000,
+            luxuryTax: 0,
+            bankruptcyRisk: 12,
+            sugarDaddy: false,
+            profitabilityTarget: 1800000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "4-3-3",
+            playingPhilosophy: "counter_attack",
+            attackingMentality: 82,
+            defensiveMentality: 68,
+            possessionStyle: 65,
+            counterAttackSpeed: 85,
+            pressing: 78,
+            creativity: 75,
+            directness: 70,
+            width: 80,
+            tempo: 78,
+            setPlayerFocus: 72,
+            teamCohesion: 92,
+            tacticalFamiliarity: 75,
+            mentalStrength: 88,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 72,
+            youthAcademy: 85,
+            medicalFacilities: 75,
+            scoutingNetwork: 70,
+            dataAnalytics: 78,
+            
+            // Performance & Reputation
+            overallRating: 75,
+            domesticReputation: 88,
+            continentalReputation: 60,
+            worldReputation: 42,
+            currentForm: 72,
+            homeAdvantage: 95,
+            awayPerformance: 62,
+            bigGameMentality: 85,
+            consistency: 68,
+            clutchFactor: 82,
+            
+            // Squad & Management
+            squadSize: 26,
+            averageAge: 27.2,
+            foreignPlayerCount: 5,
+            homegrownPlayers: 9,
+            injuryProneness: 16,
+            squadDepth: 68,
+            teamSpirit: 95,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 80,
+            trophyHistory: 0,
+            managerExpectations: 75,
+        },
+
+        Mohun_Bagan_SG: {
+            teamId: TEM14003,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13001,
+            name: "Mohun Bagan Super Giant",
+            shortName: "MBSG",
+            nickname: "Mariners",
+            foundedYear: 1889,
+            city: "Kolkata",
+            primaryColor: "Green",
+            
+            // Financial Management
+            transferBudget: 12000000,
+            wageBudget: 18000000,
+            bankBalance: 8000000,
+            debt: 3000000,
+            revenue: 22000000,
+            ticketPrices: 3,
+            commercialDeals: 15000000,
+            tvMoney: 3000000,
+            luxuryTax: 500000,
+            bankruptcyRisk: 8,
+            sugarDaddy: true,
+            profitabilityTarget: 3000000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "4-4-2",
+            playingPhilosophy: "possession",
+            attackingMentality: 80,
+            defensiveMentality: 75,
+            possessionStyle: 82,
+            counterAttackSpeed: 70,
+            pressing: 75,
+            creativity: 85,
+            directness: 55,
+            width: 78,
+            tempo: 75,
+            setPlayerFocus: 80,
+            teamCohesion: 88,
+            tacticalFamiliarity: 85,
+            mentalStrength: 90,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 82,
+            youthAcademy: 90,
+            medicalFacilities: 85,
+            scoutingNetwork: 88,
+            dataAnalytics: 90,
+            
+            // Performance & Reputation
+            overallRating: 85,
+            domesticReputation: 95,
+            continentalReputation: 75,
+            worldReputation: 60,
+            currentForm: 82,
+            homeAdvantage: 92,
+            awayPerformance: 78,
+            bigGameMentality: 90,
+            consistency: 85,
+            clutchFactor: 88,
+            
+            // Squad & Management
+            squadSize: 30,
+            averageAge: 27.8,
+            foreignPlayerCount: 6,
+            homegrownPlayers: 12,
+            injuryProneness: 15,
+            squadDepth: 85,
+            teamSpirit: 92,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 1,
+            rivalryIntensity: 98,
+            trophyHistory: 25,
+            managerExpectations: 88,
+        },
+
+        FC_Goa: {
+            teamId: TEM14004,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13002,
+            name: "FC Goa",
+            shortName: "FCG",
+            nickname: "Gaurs",
+            foundedYear: 2014,
+            city: "Margao",
+            primaryColor: "Orange",
+            
+            // Financial Management
+            transferBudget: 9000000,
+            wageBudget: 13000000,
+            bankBalance: 6000000,
+            debt: 1800000,
+            revenue: 16000000,
+            ticketPrices: 4,
+            commercialDeals: 9000000,
+            tvMoney: 3000000,
+            luxuryTax: 0,
+            bankruptcyRisk: 10,
+            sugarDaddy: false,
+            profitabilityTarget: 2200000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "4-3-3",
+            playingPhilosophy: "tiki_taka",
+            attackingMentality: 85,
+            defensiveMentality: 65,
+            possessionStyle: 88,
+            counterAttackSpeed: 75,
+            pressing: 82,
+            creativity: 88,
+            directness: 35,
+            width: 85,
+            tempo: 80,
+            setPlayerFocus: 75,
+            teamCohesion: 85,
+            tacticalFamiliarity: 90,
+            mentalStrength: 80,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 88,
+            youthAcademy: 92,
+            medicalFacilities: 90,
+            scoutingNetwork: 85,
+            dataAnalytics: 92,
+            
+            // Performance & Reputation
+            overallRating: 82,
+            domesticReputation: 88,
+            continentalReputation: 78,
+            worldReputation: 55,
+            currentForm: 80,
+            homeAdvantage: 85,
+            awayPerformance: 75,
+            bigGameMentality: 82,
+            consistency: 88,
+            clutchFactor: 80,
+            
+            // Squad & Management
+            squadSize: 28,
+            averageAge: 25.8,
+            foreignPlayerCount: 7,
+            homegrownPlayers: 6,
+            injuryProneness: 12,
+            squadDepth: 80,
+            teamSpirit: 88,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 70,
+            trophyHistory: 3,
+            managerExpectations: 85,
+        },
+
+        NorthEast_United: {
+            teamId: TEM14005,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13010,
+            name: "NorthEast United FC",
+            shortName: "NEU",
+            nickname: "Highlanders",
+            foundedYear: 2014,
+            city: "Guwahati",
+            primaryColor: "Red",
+            
+            // Financial Management
+            transferBudget: 6500000,
+            wageBudget: 9500000,
+            bankBalance: 3500000,
+            debt: 1200000,
+            revenue: 12000000,
+            ticketPrices: 2,
+            commercialDeals: 5500000,
+            tvMoney: 3000000,
+            luxuryTax: 0,
+            bankruptcyRisk: 18,
+            sugarDaddy: false,
+            profitabilityTarget: 1500000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "5-3-2",
+            playingPhilosophy: "direct",
+            attackingMentality: 70,
+            defensiveMentality: 80,
+            possessionStyle: 55,
+            counterAttackSpeed: 80,
+            pressing: 75,
+            creativity: 65,
+            directness: 85,
+            width: 70,
+            tempo: 70,
+            setPlayerFocus: 70,
+            teamCohesion: 85,
+            tacticalFamiliarity: 70,
+            mentalStrength: 85,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 68,
+            youthAcademy: 75,
+            medicalFacilities: 70,
+            scoutingNetwork: 68,
+            dataAnalytics: 70,
+            
+            // Performance & Reputation
+            overallRating: 68,
+            domesticReputation: 75,
+            continentalReputation: 50,
+            worldReputation: 35,
+            currentForm: 65,
+            homeAdvantage: 88,
+            awayPerformance: 55,
+            bigGameMentality: 75,
+            consistency: 60,
+            clutchFactor: 72,
+            
+            // Squad & Management
+            squadSize: 25,
+            averageAge: 26.8,
+            foreignPlayerCount: 5,
+            homegrownPlayers: 8,
+            injuryProneness: 20,
+            squadDepth: 60,
+            teamSpirit: 90,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 65,
+            trophyHistory: 0,
+            managerExpectations: 65,
+        },
+
+        Jamshedpur_FC: {
+            teamId: TEM14006,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13006,
+            name: "Jamshedpur FC",
+            shortName: "JFC",
+            nickname: "Red Miners",
+            foundedYear: 2017,
+            city: "Jamshedpur",
+            primaryColor: "Red",
+            
+            // Financial Management
+            transferBudget: 10000000,
+            wageBudget: 15000000,
+            bankBalance: 7000000,
+            debt: 2500000,
+            revenue: 18000000,
+            ticketPrices: 3,
+            commercialDeals: 12000000,
+            tvMoney: 3000000,
+            luxuryTax: 0,
+            bankruptcyRisk: 12,
+            sugarDaddy: true,
+            profitabilityTarget: 2500000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "4-1-4-1",
+            playingPhilosophy: "counter_attack",
+            attackingMentality: 75,
+            defensiveMentality: 82,
+            possessionStyle: 68,
+            counterAttackSpeed: 88,
+            pressing: 80,
+            creativity: 72,
+            directness: 75,
+            width: 72,
+            tempo: 75,
+            setPlayerFocus: 78,
+            teamCohesion: 88,
+            tacticalFamiliarity: 82,
+            mentalStrength: 85,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 85,
+            youthAcademy: 82,
+            medicalFacilities: 88,
+            scoutingNetwork: 80,
+            dataAnalytics: 85,
+            
+            // Performance & Reputation
+            overallRating: 80,
+            domesticReputation: 85,
+            continentalReputation: 65,
+            worldReputation: 48,
+            currentForm: 78,
+            homeAdvantage: 92,
+            awayPerformance: 68,
+            bigGameMentality: 85,
+            consistency: 80,
+            clutchFactor: 88,
+            
+            // Squad & Management
+            squadSize: 27,
+            averageAge: 28.2,
+            foreignPlayerCount: 6,
+            homegrownPlayers: 9,
+            injuryProneness: 16,
+            squadDepth: 75,
+            teamSpirit: 90,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 70,
+            trophyHistory: 1,
+            managerExpectations: 82,
+        },
+
+        Mumbai_City_FC: {
+            teamId: TEM14007,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13009,
+            name: "Mumbai City FC",
+            shortName: "MCFC",
+            nickname: "Islanders",
+            foundedYear: 2014,
+            city: "Mumbai",
+            primaryColor: "Blue",
+            
+            // Financial Management
+            transferBudget: 15000000,
+            wageBudget: 22000000,
+            bankBalance: 10000000,
+            debt: 4000000,
+            revenue: 28000000,
+            ticketPrices: 8,
+            commercialDeals: 20000000,
+            tvMoney: 3000000,
+            luxuryTax: 1000000,
+            bankruptcyRisk: 5,
+            sugarDaddy: true,
+            profitabilityTarget: 4000000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "4-3-3",
+            playingPhilosophy: "possession",
+            attackingMentality: 85,
+            defensiveMentality: 70,
+            possessionStyle: 85,
+            counterAttackSpeed: 72,
+            pressing: 85,
+            creativity: 90,
+            directness: 45,
+            width: 82,
+            tempo: 82,
+            setPlayerFocus: 85,
+            teamCohesion: 85,
+            tacticalFamiliarity: 90,
+            mentalStrength: 82,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 92,
+            youthAcademy: 88,
+            medicalFacilities: 95,
+            scoutingNetwork: 92,
+            dataAnalytics: 95,
+            
+            // Performance & Reputation
+            overallRating: 88,
+            domesticReputation: 90,
+            continentalReputation: 82,
+            worldReputation: 65,
+            currentForm: 85,
+            homeAdvantage: 82,
+            awayPerformance: 82,
+            bigGameMentality: 88,
+            consistency: 85,
+            clutchFactor: 85,
+            
+            // Squad & Management
+            squadSize: 30,
+            averageAge: 26.2,
+            foreignPlayerCount: 7,
+            homegrownPlayers: 8,
+            injuryProneness: 10,
+            squadDepth: 88,
+            teamSpirit: 82,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 1,
+            rivalryIntensity: 75,
+            trophyHistory: 2,
+            managerExpectations: 90,
+        },
+
+        Odisha_FC: {
+            teamId: TEM14008,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13011,
+            name: "Odisha FC",
+            shortName: "OFC",
+            nickname: "Juggernauts",
+            foundedYear: 2014,
+            city: "Bhubaneswar",
+            primaryColor: "Purple",
+            
+            // Financial Management
+            transferBudget: 7000000,
+            wageBudget: 10500000,
+            bankBalance: 4000000,
+            debt: 1500000,
+            revenue: 13000000,
+            ticketPrices: 3,
+            commercialDeals: 6500000,
+            tvMoney: 3000000,
+            luxuryTax: 0,
+            bankruptcyRisk: 15,
+            sugarDaddy: false,
+            profitabilityTarget: 1800000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "4-2-3-1",
+            playingPhilosophy: "counter_attack",
+            attackingMentality: 72,
+            defensiveMentality: 78,
+            possessionStyle: 60,
+            counterAttackSpeed: 82,
+            pressing: 70,
+            creativity: 70,
+            directness: 70,
+            width: 75,
+            tempo: 72,
+            setPlayerFocus: 68,
+            teamCohesion: 82,
+            tacticalFamiliarity: 75,
+            mentalStrength: 78,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 75,
+            youthAcademy: 80,
+            medicalFacilities: 78,
+            scoutingNetwork: 72,
+            dataAnalytics: 80,
+            
+            // Performance & Reputation
+            overallRating: 72,
+            domesticReputation: 78,
+            continentalReputation: 55,
+            worldReputation: 38,
+            currentForm: 70,
+            homeAdvantage: 85,
+            awayPerformance: 62,
+            bigGameMentality: 75,
+            consistency: 70,
+            clutchFactor: 75,
+            
+            // Squad & Management
+            squadSize: 26,
+            averageAge: 26.5,
+            foreignPlayerCount: 6,
+            homegrownPlayers: 7,
+            injuryProneness: 17,
+            squadDepth: 68,
+            teamSpirit: 85,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 65,
+            trophyHistory: 0,
+            managerExpectations: 70,
+        },
+
+        East_Bengal_FC: {
+            teamId: TEM14009,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13001,
+            name: "East Bengal FC",
+            shortName: "EBFC",
+            nickname: "Red and Gold Brigade",
+            foundedYear: 1920,
+            city: "Kolkata",
+            primaryColor: "Red",
+            
+            // Financial Management
+            transferBudget: 8000000,
+            wageBudget: 11000000,
+            bankBalance: 3000000,
+            debt: 5000000,
+            revenue: 15000000,
+            ticketPrices: 3,
+            commercialDeals: 8000000,
+            tvMoney: 3000000,
+            luxuryTax: 0,
+            bankruptcyRisk: 25,
+            sugarDaddy: false,
+            profitabilityTarget: 1000000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "4-4-2",
+            playingPhilosophy: "direct",
+            attackingMentality: 78,
+            defensiveMentality: 72,
+            possessionStyle: 65,
+            counterAttackSpeed: 75,
+            pressing: 72,
+            creativity: 75,
+            directness: 78,
+            width: 75,
+            tempo: 75,
+            setPlayerFocus: 72,
+            teamCohesion: 80,
+            tacticalFamiliarity: 70,
+            mentalStrength: 88,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 70,
+            youthAcademy: 85,
+            medicalFacilities: 72,
+            scoutingNetwork: 75,
+            dataAnalytics: 75,
+            
+            // Performance & Reputation
+            overallRating: 75,
+            domesticReputation: 92,
+            continentalReputation: 68,
+            worldReputation: 55,
+            currentForm: 65,
+            homeAdvantage: 90,
+            awayPerformance: 65,
+            bigGameMentality: 90,
+            consistency: 65,
+            clutchFactor: 85,
+            
+            // Squad & Management
+            squadSize: 28,
+            averageAge: 28.5,
+            foreignPlayerCount: 5,
+            homegrownPlayers: 11,
+            injuryProneness: 18,
+            squadDepth: 70,
+            teamSpirit: 88,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 98,
+            trophyHistory: 20,
+            managerExpectations: 75,
+        },
+
+        Punjab_FC: {
+            teamId: TEM14010,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13012,
+            name: "Punjab FC",
+            shortName: "PFC",
+            nickname: "Warriors",
+            foundedYear: 2020,
+            city: "Mohali",
+            primaryColor: "Yellow",
+            
+            // Financial Management
+            transferBudget: 6000000,
+            wageBudget: 8500000,
+            bankBalance: 2500000,
+            debt: 800000,
+            revenue: 10000000,
+            ticketPrices: 3,
+            commercialDeals: 4500000,
+            tvMoney: 3000000,
+            luxuryTax: 0,
+            bankruptcyRisk: 20,
+            sugarDaddy: false,
+            profitabilityTarget: 1200000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "3-5-2",
+            playingPhilosophy: "direct",
+            attackingMentality: 68,
+            defensiveMentality: 82,
+            possessionStyle: 52,
+            counterAttackSpeed: 78,
+            pressing: 68,
+            creativity: 60,
+            directness: 82,
+            width: 75,
+            tempo: 68,
+            setPlayerFocus: 65,
+            teamCohesion: 78,
+            tacticalFamiliarity: 65,
+            mentalStrength: 75,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 68,
+            youthAcademy: 72,
+            medicalFacilities: 70,
+            scoutingNetwork: 65,
+            dataAnalytics: 70,
+            
+            // Performance & Reputation
+            overallRating: 65,
+            domesticReputation: 70,
+            continentalReputation: 45,
+            worldReputation: 30,
+            currentForm: 62,
+            homeAdvantage: 78,
+            awayPerformance: 58,
+            bigGameMentality: 68,
+            consistency: 60,
+            clutchFactor: 65,
+            
+            // Squad & Management
+            squadSize: 24,
+            averageAge: 25.8,
+            foreignPlayerCount: 4,
+            homegrownPlayers: 9,
+            injuryProneness: 22,
+            squadDepth: 55,
+            teamSpirit: 80,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 60,
+            trophyHistory: 0,
+            managerExpectations: 60,
+        },
+
+        Chennaiyin_FC: {
+            teamId: TEM14011,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13004,
+            name: "Chennaiyin FC",
+            shortName: "CFC",
+            nickname: "Marina Machans",
+            foundedYear: 2014,
+            city: "Chennai",
+            primaryColor: "Blue",
+            
+            // Financial Management
+            transferBudget: 9500000,
+            wageBudget: 14000000,
+            bankBalance: 6500000,
+            debt: 2200000,
+            revenue: 17000000,
+            ticketPrices: 5,
+            commercialDeals: 10000000,
+            tvMoney: 3000000,
+            luxuryTax: 200000,
+            bankruptcyRisk: 10,
+            sugarDaddy: false,
+            profitabilityTarget: 2400000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "4-2-3-1",
+            playingPhilosophy: "possession",
+            attackingMentality: 78,
+            defensiveMentality: 75,
+            possessionStyle: 80,
+            counterAttackSpeed: 70,
+            pressing: 78,
+            creativity: 82,
+            directness: 50,
+            width: 78,
+            tempo: 75,
+            setPlayerFocus: 75,
+            teamCohesion: 82,
+            tacticalFamiliarity: 80,
+            mentalStrength: 80,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 85,
+            youthAcademy: 88,
+            medicalFacilities: 85,
+            scoutingNetwork: 82,
+            dataAnalytics: 88,
+            
+            // Performance & Reputation
+            overallRating: 78,
+            domesticReputation: 85,
+            continentalReputation: 70,
+            worldReputation: 52,
+            currentForm: 75,
+            homeAdvantage: 85,
+            awayPerformance: 72,
+            bigGameMentality: 82,
+            consistency: 78,
+            clutchFactor: 80,
+            
+            // Squad & Management
+            squadSize: 29,
+            averageAge: 27.2,
+            foreignPlayerCount: 6,
+            homegrownPlayers: 8,
+            injuryProneness: 14,
+            squadDepth: 78,
+            teamSpirit: 85,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 75,
+            trophyHistory: 2,
+            managerExpectations: 80,
+        },
+
+        Hyderabad_FC: {
+            teamId: TEM14012,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13005,
+            name: "Hyderabad FC",
+            shortName: "HFC",
+            nickname: "Nizams",
+            foundedYear: 2019,
+            city: "Hyderabad",
+            primaryColor: "Yellow",
+            
+            // Financial Management
+            transferBudget: 8500000,
+            wageBudget: 12500000,
+            bankBalance: 5500000,
+            debt: 1800000,
+            revenue: 15500000,
+            ticketPrices: 4,
+            commercialDeals: 8500000,
+            tvMoney: 3000000,
+            luxuryTax: 0,
+            bankruptcyRisk: 12,
+            sugarDaddy: false,
+            profitabilityTarget: 2000000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "3-4-3",
+            playingPhilosophy: "counter_attack",
+            attackingMentality: 82,
+            defensiveMentality: 68,
+            possessionStyle: 62,
+            counterAttackSpeed: 88,
+            pressing: 75,
+            creativity: 78,
+            directness: 72,
+            width: 85,
+            tempo: 80,
+            setPlayerFocus: 70,
+            teamCohesion: 85,
+            tacticalFamiliarity: 82,
+            mentalStrength: 82,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 80,
+            youthAcademy: 85,
+            medicalFacilities: 82,
+            scoutingNetwork: 78,
+            dataAnalytics: 85,
+            
+            // Performance & Reputation
+            overallRating: 80,
+            domesticReputation: 82,
+            continentalReputation: 68,
+            worldReputation: 48,
+            currentForm: 82,
+            homeAdvantage: 78,
+            awayPerformance: 75,
+            bigGameMentality: 85,
+            consistency: 82,
+            clutchFactor: 85,
+            
+            // Squad & Management
+            squadSize: 27,
+            averageAge: 25.5,
+            foreignPlayerCount: 6,
+            homegrownPlayers: 7,
+            injuryProneness: 13,
+            squadDepth: 78,
+            teamSpirit: 88,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 68,
+            trophyHistory: 1,
+            managerExpectations: 82,
+        },
+
+        Mohammedan_SC: {
+            teamId: TEM14013,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13008,
+            name: "Mohammedan SC",
+            shortName: "MSC",
+            nickname: "Black Panthers",
+            foundedYear: 1891,
+            city: "Kolkata",
+            primaryColor: "Black",
+            
+            // Financial Management
+            transferBudget: 5500000,
+            wageBudget: 7500000,
+            bankBalance: 2000000,
+            debt: 3000000,
+            revenue: 9500000,
+            ticketPrices: 2,
+            commercialDeals: 4000000,
+            tvMoney: 3000000,
+            luxuryTax: 0,
+            bankruptcyRisk: 30,
+            sugarDaddy: false,
+            profitabilityTarget: 800000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "4-5-1",
+            playingPhilosophy: "direct",
+            attackingMentality: 65,
+            defensiveMentality: 85,
+            possessionStyle: 45,
+            counterAttackSpeed: 82,
+            pressing: 70,
+            creativity: 60,
+            directness: 88,
+            width: 65,
+            tempo: 65,
+            setPlayerFocus: 72,
+            teamCohesion: 88,
+            tacticalFamiliarity: 68,
+            mentalStrength: 85,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 62,
+            youthAcademy: 75,
+            medicalFacilities: 65,
+            scoutingNetwork: 60,
+            dataAnalytics: 65,
+            
+            // Performance & Reputation
+            overallRating: 62,
+            domesticReputation: 80,
+            continentalReputation: 45,
+            worldReputation: 40,
+            currentForm: 58,
+            homeAdvantage: 88,
+            awayPerformance: 50,
+            bigGameMentality: 80,
+            consistency: 55,
+            clutchFactor: 75,
+            
+            // Squad & Management
+            squadSize: 23,
+            averageAge: 27.8,
+            foreignPlayerCount: 3,
+            homegrownPlayers: 12,
+            injuryProneness: 25,
+            squadDepth: 50,
+            teamSpirit: 92,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 85,
+            trophyHistory: 15,
+            managerExpectations: 58,
+        },
+
+        Sporting_Club_Delhi: {
+            teamId: TEM14014,
+            countryId: COUN1066,
+            leagueId: LEAG12001,
+            stadiumId: STAD13014,
+            name: "Sporting Club Delhi",
+            shortName: "SCD",
+            nickname: "Lions",
+            foundedYear: 2023,
+            city: "New Delhi",
+            primaryColor: "Orange",
+            
+            // Financial Management
+            transferBudget: 7000000,
+            wageBudget: 10000000,
+            bankBalance: 4000000,
+            debt: 1000000,
+            revenue: 12000000,
+            ticketPrices: 4,
+            commercialDeals: 6000000,
+            tvMoney: 3000000,
+            luxuryTax: 0,
+            bankruptcyRisk: 15,
+            sugarDaddy: true,
+            profitabilityTarget: 1500000,
+            
+            // Playing Style & Tactics
+            preferredFormation: "4-3-3",
+            playingPhilosophy: "possession",
+            attackingMentality: 75,
+            defensiveMentality: 70,
+            possessionStyle: 72,
+            counterAttackSpeed: 68,
+            pressing: 75,
+            creativity: 72,
+            directness: 58,
+            width: 78,
+            tempo: 72,
+            setPlayerFocus: 65,
+            teamCohesion: 70,
+            tacticalFamiliarity: 65,
+            mentalStrength: 68,
+            
+            // Infrastructure & Facilities
+            trainingFacilities: 78,
+            youthAcademy: 70,
+            medicalFacilities: 80,
+            scoutingNetwork: 75,
+            dataAnalytics: 82,
+            
+            // Performance & Reputation
+            overallRating: 68,
+            domesticReputation: 65,
+            continentalReputation: 40,
+            worldReputation: 25,
+            currentForm: 65,
+            homeAdvantage: 70,
+            awayPerformance: 65,
+            bigGameMentality: 68,
+            consistency: 65,
+            clutchFactor: 65,
+            
+            // Squad & Management
+            squadSize: 25,
+            averageAge: 24.5,
+            foreignPlayerCount: 5,
+            homegrownPlayers: 6,
+            injuryProneness: 18,
+            squadDepth: 62,
+            teamSpirit: 75,
+            
+            // Competition & Historical
+            currentLeagueTier: 1,
+            euroCompetitionSpots: 0,
+            rivalryIntensity: 55,
+            trophyHistory: 0,
+            managerExpectations: 65,
+        },
     }
 }

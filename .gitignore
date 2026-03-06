@@ -9,6 +9,9 @@ Cargo.lock
 **/*.rs.bk
 *.pdb
 
+# Python
+*.py
+
 # IDEs and Editors
 .vscode/
 .idea/

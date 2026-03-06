@@ -311,6 +311,22 @@ impl BinaryReader {
                     .clone();
                 IraValue::Choice(choice)
             },
+            11 => { // TimeZone
+                let hours = self.data[self.position] as i8;
+                self.position += 1;
+                let minutes = self.data[self.position];
+                self.position += 1;
+                let tz = TimeZone::new(hours, minutes)
+                    .map_err(|e| IraError::compilation_error(&e))?;
+                IraValue::TimeZone(tz)
+            },
+            12 => { // UUID
+                let uuid_index = self.read_u32()?;
+                let uuid_str = string_table.get(uuid_index as usize)
+                    .ok_or_else(|| IraError::compilation_error("Invalid string table index"))?
+                    .clone();
+                IraValue::UUID(uuid_str)
+            },
             _ => {
                 return Err(IraError::compilation_error(&format!("Unknown value type: {}", value_type)));
             }
@@ -469,6 +485,22 @@ impl BinaryReader {
                     .ok_or_else(|| IraError::compilation_error("Invalid string table index"))?
                     .clone();
                 IraValue::Choice(choice)
+            },
+            11 => { // TimeZone
+                let hours = self.data[self.position] as i8;
+                self.position += 1;
+                let minutes = self.data[self.position];
+                self.position += 1;
+                let tz = TimeZone::new(hours, minutes)
+                    .map_err(|e| IraError::compilation_error(&e))?;
+                IraValue::TimeZone(tz)
+            },
+            12 => { // UUID
+                let uuid_index = self.read_u32()?;
+                let uuid_str = string_table.get(uuid_index as usize)
+                    .ok_or_else(|| IraError::compilation_error("Invalid string table index"))?
+                    .clone();
+                IraValue::UUID(uuid_str)
             },
             _ => {
                 return Err(IraError::compilation_error(&format!("Unknown value type: {}", value_type)));

@@ -134,6 +134,7 @@ fn execute_parsed_query(data_sections: &HashMap<SchemaType, SchemaData>, query: 
         "schema" => execute_schema_query(data_sections, &parts[1..])?,
         "countries" => execute_countries_query(data_sections, &parts[1..])?,
         "teams" => execute_teams_query(data_sections, &parts[1..])?,
+        "leagues" => execute_leagues_query(data_sections, &parts[1..])?,
         _ => return Err(format!("Unknown query type: {}", parts[0]).into()),
     }
     
@@ -235,6 +236,164 @@ fn execute_teams_query(_data_sections: &HashMap<SchemaType, SchemaData>, _parts:
     // Teams queries - similar structure to countries
     println!("Teams queries not yet implemented");
     Ok(())
+}
+
+fn execute_leagues_query(data_sections: &HashMap<SchemaType, SchemaData>, parts: &[&str]) -> Result<(), Box<dyn std::error::Error>> {
+    let leagues_data = data_sections.get(&SchemaType::Leagues)
+        .ok_or("No leagues data found")?;
+    
+    if parts.is_empty() {
+        return Err("Incomplete leagues query".into());
+    }
+    
+    match parts[0] {
+        "all" => execute_all_leagues_query(leagues_data, &parts[1..])?,
+        "filter" => execute_leagues_filter_query(leagues_data, &parts[1..])?,
+        "sort" => execute_leagues_sort_query(leagues_data, &parts[1..])?,
+        league_name => {
+            if let Some(league_data) = leagues_data.instances.get(league_name) {
+                if parts.len() == 1 {
+                    // Print all fields for this league
+                    for (field_name, value) in &league_data.fields {
+                        println!("{}: {}", field_name, format_value(value));
+                    }
+                } else {
+                    // Print specific field
+                    let field_name = parts[1];
+                    if let Some(value) = league_data.fields.get(field_name) {
+                        println!("{}", format_value(value));
+                    } else {
+                        return Err(format!("Field '{}' not found", field_name).into());
+                    }
+                }
+            } else {
+                return Err(format!("League '{}' not found", league_name).into());
+            }
+        }
+    }
+    Ok(())
+}
+
+// Placeholder functions for league queries (similar to countries but for leagues)
+fn execute_all_leagues_query(leagues_data: &SchemaData, parts: &[&str]) -> Result<(), Box<dyn std::error::Error>> {
+    if parts.is_empty() {
+        return Err("Incomplete all leagues query".into());
+    }
+    
+    let field_name = parts[0];
+    
+    if parts.len() > 1 {
+        match parts[1] {
+            "min" => {
+                if let Some((league, value)) = find_min_value_leagues(leagues_data, field_name)? {
+                    println!("Min {}: {} ({})", field_name, format_value(value), league);
+                }
+            },
+            "max" => {
+                if let Some((league, value)) = find_max_value_leagues(leagues_data, field_name)? {
+                    println!("Max {}: {} ({})", field_name, format_value(value), league);
+                }
+            },
+            "avg" => {
+                if let Some(avg) = calculate_average_leagues(leagues_data, field_name)? {
+                    println!("Average {}: {:.2}", field_name, avg);
+                }
+            },
+            "stats" => {
+                print_field_statistics_leagues(leagues_data, field_name)?;
+            },
+            "unique" => {
+                let unique_values = get_unique_values_leagues(leagues_data, field_name)?;
+                for value in unique_values {
+                    println!("{}", value);
+                }
+            },
+            _ => return Err(format!("Unknown aggregation: {}", parts[1]).into()),
+        }
+    } else {
+        // Print field values for all leagues
+        for (league_name, league_data) in &leagues_data.instances {
+            if let Some(value) = league_data.fields.get(field_name) {
+                println!("{}: {}", league_name, format_value(value));
+            }
+        }
+    }
+    
+    Ok(())
+}
+
+fn execute_leagues_filter_query(_leagues_data: &SchemaData, _parts: &[&str]) -> Result<(), Box<dyn std::error::Error>> {
+    println!("League filter queries not yet implemented");
+    Ok(())
+}
+
+fn execute_leagues_sort_query(_leagues_data: &SchemaData, _parts: &[&str]) -> Result<(), Box<dyn std::error::Error>> {
+    println!("League sort queries not yet implemented");
+    Ok(())
+}
+
+// Helper functions for league queries (similar to countries)
+fn find_min_value_leagues<'a>(leagues_data: &'a SchemaData, field_name: &str) -> Result<Option<(String, &'a IraValue)>, Box<dyn std::error::Error>> {
+    let mut min_value: Option<(String, &IraValue)> = None;
+    
+    for (league_name, league_data) in &leagues_data.instances {
+        if let Some(value) = league_data.fields.get(field_name) {
+            if let Some((_, current_min)) = &min_value {
+                if extract_numeric_value(value)? < extract_numeric_value(current_min)? {
+                    min_value = Some((league_name.clone(), value));
+                }
+            } else {
+                min_value = Some((league_name.clone(), value));
+            }
+        }
+    }
+    
+    Ok(min_value)
+}
+
+fn find_max_value_leagues<'a>(leagues_data: &'a SchemaData, field_name: &str) -> Result<Option<(String, &'a IraValue)>, Box<dyn std::error::Error>> {
+    let mut max_value: Option<(String, &IraValue)> = None;
+    
+    for (league_name, league_data) in &leagues_data.instances {
+        if let Some(value) = league_data.fields.get(field_name) {
+            if let Some((_, current_max)) = &max_value {
+                if extract_numeric_value(value)? > extract_numeric_value(current_max)? {
+                    max_value = Some((league_name.clone(), value));
+                }
+            } else {
+                max_value = Some((league_name.clone(), value));
+            }
+        }
+    }
+    
+    Ok(max_value)
+}
+
+fn calculate_average_leagues(leagues_data: &SchemaData, field_name: &str) -> Result<Option<f64>, Box<dyn std::error::Error>> {
+    let mut total = 0.0;
+    let mut count = 0;
+    
+    for (_, league_data) in &leagues_data.instances {
+        if let Some(value) = league_data.fields.get(field_name) {
+            total += extract_numeric_value(value)?;
+            count += 1;
+        }
+    }
+    
+    if count > 0 {
+        Ok(Some(total / count as f64))
+    } else {
+        Ok(None)
+    }
+}
+
+fn print_field_statistics_leagues(_leagues_data: &SchemaData, _field_name: &str) -> Result<(), Box<dyn std::error::Error>> {
+    println!("League statistics not yet implemented");
+    Ok(())
+}
+
+fn get_unique_values_leagues(_leagues_data: &SchemaData, _field_name: &str) -> Result<Vec<String>, Box<dyn std::error::Error>> {
+    Ok(vec!["Not implemented".to_string()])
 }
 
 fn execute_all_countries_query(countries_data: &SchemaData, parts: &[&str]) -> Result<(), Box<dyn std::error::Error>> {
@@ -393,6 +552,7 @@ fn format_value(value: &IraValue) -> String {
         IraValue::Choice(c) => c.clone(),
         IraValue::Reference { instance, .. } => instance.clone(),
         IraValue::TimeZone(tz) => tz.format(),
+        IraValue::UUID(uuid_str) => uuid_str.clone(),
     }
 }
 

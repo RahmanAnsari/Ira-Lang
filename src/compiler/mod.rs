@@ -86,6 +86,9 @@ fn collect_strings_from_value(value: &IraValue, strings: &mut std::collections::
                 collect_strings_from_value(item, strings);
             }
         },
+        IraValue::UUID(uuid_str) => {
+            strings.insert(uuid_str.clone());
+        },
         _ => {}, // Other types don't contain strings
     }
 }
@@ -192,6 +195,7 @@ fn write_value_data(
         IraValue::Array(_) => 9u8,
         IraValue::Choice(_) => 10u8,
         IraValue::TimeZone(_) => 11u8,
+        IraValue::UUID(_) => 12u8,
     };
     output.push(value_type);
     
@@ -267,6 +271,13 @@ fn write_value_data(
             // Write timezone as hours (i8) and minutes (u8)
             output.push(tz.hours as u8);
             output.push(tz.minutes);
+        },
+        IraValue::UUID(uuid_str) => {
+            // Write UUID as string index
+            let index = string_table.iter()
+                .position(|s| s == uuid_str)
+                .unwrap_or(0) as u32;
+            output.extend_from_slice(&index.to_le_bytes());
         },
     }
     
